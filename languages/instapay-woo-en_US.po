@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Instapay WooCommerce\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Payment Review"
+msgstr "Payment Review"
+
+msgid "Payment Review <span class=\"count\">(%s)</span>"
+msgstr "Payment Review <span class=\"count\">(%s)</span>"
+
+msgid "Invalid security token."
+msgstr "Invalid security token."
+
+msgid "Order not found."
+msgstr "Order not found."
+
+msgid "No file uploaded or file format not supported."
+msgstr "No file uploaded or file format not supported."
+
+msgid "File size too large. Maximum allowed is 5MB."
+msgstr "File size too large. Maximum allowed is 5MB."
+
+msgid "Instapay receipt uploaded. Awaiting manager approval."
+msgstr "Instapay receipt uploaded. Awaiting manager approval."
+
+msgid "Receipt uploaded successfully. Order is under review."
+msgstr "Receipt uploaded successfully. Order is under review."
+
+msgid "Failed to save uploaded file."
+msgstr "Failed to save uploaded file."
+
+msgid "Instapay"
+msgstr "Instapay"
+
+msgid "Proceed to Instapay"
+msgstr "Proceed to Instapay"
+
+msgid "Enable/Disable"
+msgstr "Enable/Disable"
+
+msgid "Enable Instapay Payment"
+msgstr "Enable Instapay Payment"
+
+msgid "Title"
+msgstr "Title"
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "This controls the title which the user sees during checkout."
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Payment method description that the customer will see on your checkout."
+msgstr "Payment method description that the customer will see on your checkout."
+
+msgid "Please transfer the total amount to our Instapay account and upload the receipt screenshot."
+msgstr "Please transfer the total amount to our Instapay account and upload the receipt screenshot."
+
+msgid "Instapay Payment Address (IPA)"
+msgstr "Instapay Payment Address (IPA)"
+
+msgid "Your Instapay address (e.g. username@instapay)."
+msgstr "Your Instapay address (e.g. username@instapay)."
+
+msgid "Instapay Phone Number"
+msgstr "Instapay Phone Number"
+
+msgid "Your mobile number registered with Instapay."
+msgstr "Your mobile number registered with Instapay."
+
+msgid "Instapay Payment URL"
+msgstr "Instapay Payment URL"
+
+msgid "Payment URL for Instapay quick action (Shown on mobile devices only)."
+msgstr "Payment URL for Instapay quick action (Shown on mobile devices only)."
+
+msgid "QR Code Image URL"
+msgstr "QR Code Image URL"
+
+msgid "URL to your Instapay QR code image (upload via media library and paste link)."
+msgstr "URL to your Instapay QR code image (upload via media library and paste link)."
+
+msgid "Payment Instructions"
+msgstr "Payment Instructions"
+
+msgid "Send Payment To"
+msgstr "Send Payment To"
+
+msgid "Quick Pay via Instapay App"
+msgstr "Quick Pay via Instapay App"
+
+msgid "Receipt uploaded successfully. Your payment is under review."
+msgstr "Receipt uploaded successfully. Your payment is under review."
+
+msgid "Your Uploaded Receipt"
+msgstr "Your Uploaded Receipt"
+
+msgid "Your previous receipt was rejected. Please securely upload a new valid screenshot."
+msgstr "Your previous receipt was rejected. Please securely upload a new valid screenshot."
+
+msgid "Upload Receipt"
+msgstr "Upload Receipt"
+
+msgid "Uploading..."
+msgstr "Uploading..."
+
+msgid "This order was not paid via Instapay."
+msgstr "This order was not paid via Instapay."
+
+msgid "Customer uploaded a receipt screenshot."
+msgstr "Customer uploaded a receipt screenshot."
+
+msgid "View Receipt Screenshot"
+msgstr "View Receipt Screenshot"
+
+msgid "Status is Payment Review. If the receipt is valid, change order status to Processing."
+msgstr "Status is Payment Review. If the receipt is valid, change order status to Processing."
+
+msgid "No receipt uploaded yet. The customer needs to upload their screenshot."
+msgstr "No receipt uploaded yet. The customer needs to upload their screenshot."
+
+msgid "Quick Actions:"
+msgstr "Quick Actions:"
+
+msgid "Accept Payment"
+msgstr "Accept Payment"
+
+msgid "Reject Payment"
+msgstr "Reject Payment"
+
+msgid "Cancel Order"
+msgstr "Cancel Order"
+
+msgid "Are you sure you want to ACCEPT this payment and mark the order as Processing?"
+msgstr "Are you sure you want to ACCEPT this payment and mark the order as Processing?"
+
+msgid "Are you sure you want to REJECT this payment and mark the order as Pending Payment?"
+msgstr "Are you sure you want to REJECT this payment and mark the order as Pending Payment?"
+
+msgid "Are you sure you want to CANCEL this order completely?"
+msgstr "Are you sure you want to CANCEL this order completely?"
+
+msgid "Invalid request."
+msgstr "Invalid request."
+
+msgid "Order updated to Processing."
+msgstr "Order updated to Processing."
+
+msgid "Payment rejected. Order is now Pending Payment for re-upload."
+msgstr "Payment rejected. Order is now Pending Payment for re-upload."
+
+msgid "Order cancelled."
+msgstr "Order cancelled."
+
+msgid "Invalid action."
+msgstr "Invalid action."
+
+msgid "Accept payments via Instapay. Customers will upload a screenshot of their transaction after checkout."
+msgstr "Accept payments via Instapay. Customers will upload a screenshot of their transaction after checkout."
+
+msgid "Action Required: Payment Receipt Rejected"
+msgstr "Action Required: Payment Receipt Rejected"
+
+msgid "Add detailed notes to the order when admins accept/reject payments"
+msgstr "Add detailed notes to the order when admins accept/reject payments"
+
+msgid "Are you sure you want to REJECT this payment and require the customer to pay/upload again?"
+msgstr "Are you sure you want to REJECT this payment and require the customer to pay/upload again?"
+
+msgid "Audit Logging"
+msgstr "Audit Logging"
+
+msgid "Auto Image Compression"
+msgstr "Auto Image Compression"
+
+msgid "Automatically compress and resize uploaded receipts"
+msgstr "Automatically compress and resize uploaded receipts"
+
+msgid "Automatically delete receipts for cancelled/failed orders older than 30 days"
+msgstr "Automatically delete receipts for cancelled/failed orders older than 30 days"
+
+msgid "Awaiting Instapay payment receipt."
+msgstr "Awaiting Instapay payment receipt."
+
+msgid "Click here to upload a new receipt"
+msgstr "Click here to upload a new receipt"
+
+msgid "Click or Drag image here"
+msgstr "Click or Drag image here"
+
+msgid "Enable automated emails when a receipt is rejected"
+msgstr "Enable automated emails when a receipt is rejected"
+
+msgid "Enter reason for rejection..."
+msgstr "Enter reason for rejection..."
+
+msgid "Failed to save file securely. Please check directory permissions."
+msgstr "Failed to save file securely. Please check directory permissions."
+
+msgid "File size exceeds 5MB. Please upload a smaller image."
+msgstr "File size exceeds 5MB. Please upload a smaller image."
+
+msgid "Hello %s,"
+msgstr "Hello %s,"
+
+msgid "Instapay (Egypt)"
+msgstr "Instapay (Egypt)"
+
+msgid "Instapay Receipts Awaiting Review"
+msgstr "Instapay Receipts Awaiting Review"
+
+msgid "Instapay Verification"
+msgstr "Instapay Verification"
+
+msgid "Instapay WooCommerce Gateway requires WooCommerce to be installed and active."
+msgstr "Instapay WooCommerce Gateway requires WooCommerce to be installed and active."
+
+msgid "Instapay payment %s by manager (%s)."
+msgstr "Instapay payment %s by manager (%s)."
+
+msgid "Instapay receipt uploaded via API. Awaiting manager approval."
+msgstr "Instapay receipt uploaded via API. Awaiting manager approval."
+
+msgid "Invalid file type. Only JPG, PNG, and WebP images are allowed."
+msgstr "Invalid file type. Only JPG, PNG, and WebP images are allowed."
+
+msgid "Invalid order ID or key."
+msgstr "Invalid order ID or key."
+
+msgid "Invalid order."
+msgstr "Invalid order."
+
+msgid "Invalid parameters."
+msgstr "Invalid parameters."
+
+msgid "Missing parameters."
+msgstr "Missing parameters."
+
+msgid "No file uploaded or an upload error occurred."
+msgstr "No file uploaded or an upload error occurred."
+
+msgid "No file uploaded."
+msgstr "No file uploaded."
+
+msgid "No orders currently awaiting review."
+msgstr "No orders currently awaiting review."
+
+msgid "Order status updated successfully."
+msgstr "Order status updated successfully."
+
+msgid "Payment Receipt Rejected"
+msgstr "Payment Receipt Rejected"
+
+msgid "Permission denied."
+msgstr "Permission denied."
+
+msgid "Please securely upload a screenshot of your successful transaction."
+msgstr "Please securely upload a screenshot of your successful transaction."
+
+msgid "Please select an image file first."
+msgstr "Please select an image file first."
+
+msgid "Processing..."
+msgstr "Processing..."
+
+msgid "Reason:"
+msgstr "Reason:"
+
+msgid "Reason: %s"
+msgstr "Reason: %s"
+
+msgid "Receipt attached"
+msgstr "Receipt attached"
+
+msgid "Receipt uploaded - Awaiting review"
+msgstr "Receipt uploaded - Awaiting review"
+
+msgid "Receipt uploaded successfully."
+msgstr "Receipt uploaded successfully."
+
+msgid "Rejection Emails"
+msgstr "Rejection Emails"
+
+msgid "Rejection Reason (Optional):"
+msgstr "Rejection Reason (Optional):"
+
+msgid "Securely Upload Receipt"
+msgstr "Securely Upload Receipt"
+
+msgid "Security verification failed."
+msgstr "Security verification failed."
+
+msgid "Status updated via Instapay quick action."
+msgstr "Status updated via Instapay quick action."
+
+msgid "Storage Cleanup"
+msgstr "Storage Cleanup"
+
+msgid "Supports: JPG, PNG, WebP (Max 5MB)"
+msgstr "Supports: JPG, PNG, WebP (Max 5MB)"
+
+msgid "Upload Payment Receipt"
+msgstr "Upload Payment Receipt"
+
+msgid "View All Pending"
+msgstr "View All Pending"
+
+msgid "We reviewed your Instapay payment receipt for order #%s, but unfortunately it was invalid or unreadable."
+msgstr "We reviewed your Instapay payment receipt for order #%s, but unfortunately it was invalid or unreadable."

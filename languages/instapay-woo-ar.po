@@ -1,0 +1,313 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Instapay WooCommerce\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Payment Review"
+msgstr "مراجعة الدفع"
+
+msgid "Payment Review <span class=\"count\">(%s)</span>"
+msgstr "مراجعة الدفع <span class=\"count\">(%s)</span>"
+
+msgid "Invalid security token."
+msgstr "رمز الأمان غير صالح."
+
+msgid "Order not found."
+msgstr "الطلب غير موجود."
+
+msgid "No file uploaded or file format not supported."
+msgstr "لم يتم رفع ملف أو صيغة الملف غير مدعومة."
+
+msgid "File size too large. Maximum allowed is 5MB."
+msgstr "حجم الملف كبير جداً. الحد الأقصى المسموح به هو 5 ميجابايت."
+
+msgid "Instapay receipt uploaded. Awaiting manager approval."
+msgstr "تم رفع إيصال إنستاباي. في انتظار موافقة الإدارة."
+
+msgid "Receipt uploaded successfully. Order is under review."
+msgstr "تم رفع الإيصال بنجاح. الطلب قيد المراجعة."
+
+msgid "Failed to save uploaded file."
+msgstr "فشل في حفظ الملف المرفوع."
+
+msgid "Instapay"
+msgstr "إنستاباي"
+
+msgid "Proceed to Instapay"
+msgstr "متابعة إلى إنستاباي"
+
+msgid "Enable/Disable"
+msgstr "تفعيل/تعطيل"
+
+msgid "Enable Instapay Payment"
+msgstr "تفعيل الدفع عبر إنستاباي"
+
+msgid "Title"
+msgstr "العنوان"
+
+msgid "This controls the title which the user sees during checkout."
+msgstr "هذا يتحكم في العنوان الذي يراه المستخدم أثناء إتمام الطلب."
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Payment method description that the customer will see on your checkout."
+msgstr "وصف طريقة الدفع الذي سيراه العميل في صفحة إتمام الطلب."
+
+msgid "Please transfer the total amount to our Instapay account and upload the receipt screenshot."
+msgstr "يرجى تحويل المبلغ الإجمالي إلى حساب إنستاباي الخاص بنا ورفع لقطة شاشة للإيصال."
+
+msgid "Instapay Payment Address (IPA)"
+msgstr "عنوان الدفع إنستاباي (IPA)"
+
+msgid "Your Instapay address (e.g. username@instapay)."
+msgstr "عنوان إنستاباي الخاص بك (مثال: username@instapay)."
+
+msgid "Instapay Phone Number"
+msgstr "رقم هاتف إنستاباي"
+
+msgid "Your mobile number registered with Instapay."
+msgstr "رقم هاتفك المسجل في إنستاباي."
+
+msgid "Instapay Payment URL"
+msgstr "رابط الدفع إنستاباي"
+
+msgid "Payment URL for Instapay quick action (Shown on mobile devices only)."
+msgstr "رابط الدفع المباشر لإنستاباي (يظهر على الأجهزة المحمولة فقط)."
+
+msgid "QR Code Image URL"
+msgstr "رابط صورة رمز QR"
+
+msgid "URL to your Instapay QR code image (upload via media library and paste link)."
+msgstr "رابط صورة رمز QR الخاص بك لإنستاباي (ارفعها عبر مكتبة الوسائط والصق الرابط هنا)."
+
+msgid "Payment Instructions"
+msgstr "تعليمات الدفع"
+
+msgid "Send Payment To"
+msgstr "إرسال الدفع إلى"
+
+msgid "Quick Pay via Instapay App"
+msgstr "دفع سريع عبر تطبيق إنستاباي"
+
+msgid "Receipt uploaded successfully. Your payment is under review."
+msgstr "تم رفع الإيصال بنجاح. دفعتك قيد المراجعة."
+
+msgid "Your Uploaded Receipt"
+msgstr "الإيصال المرفوع"
+
+msgid "Your previous receipt was rejected. Please securely upload a new valid screenshot."
+msgstr "تم رفض إيصالك السابق. يرجى رفع لقطة شاشة صالحة جديدة بأمان."
+
+msgid "Upload Receipt"
+msgstr "رفع الإيصال"
+
+msgid "Uploading..."
+msgstr "جاري الرفع..."
+
+msgid "This order was not paid via Instapay."
+msgstr "لم يتم دفع هذا الطلب عبر إنستاباي."
+
+msgid "Customer uploaded a receipt screenshot."
+msgstr "قام العميل برفع لقطة شاشة للإيصال."
+
+msgid "View Receipt Screenshot"
+msgstr "عرض لقطة شاشة الإيصال"
+
+msgid "Status is Payment Review. If the receipt is valid, change order status to Processing."
+msgstr "الحالة هي مراجعة الدفع. إذا كان الإيصال صالحاً، قم بتغيير حالة الطلب إلى قيد التنفيذ."
+
+msgid "No receipt uploaded yet. The customer needs to upload their screenshot."
+msgstr "لم يتم رفع إيصال بعد. يحتاج العميل إلى رفع لقطة الشاشة الخاصة به."
+
+msgid "Quick Actions:"
+msgstr "إجراءات سريعة:"
+
+msgid "Accept Payment"
+msgstr "قبول الدفع"
+
+msgid "Reject Payment"
+msgstr "رفض الدفع"
+
+msgid "Cancel Order"
+msgstr "إلغاء الطلب"
+
+msgid "Are you sure you want to ACCEPT this payment and mark the order as Processing?"
+msgstr "هل أنت متأكد أنك تريد قبول هذا الدفع وتعيين الطلب كقيد التنفيذ؟"
+
+msgid "Are you sure you want to REJECT this payment and mark the order as Pending Payment?"
+msgstr "هل أنت متأكد أنك تريد رفض هذا الدفع وتعيين الطلب كبانتظار الدفع؟"
+
+msgid "Are you sure you want to CANCEL this order completely?"
+msgstr "هل أنت متأكد أنك تريد إلغاء هذا الطلب تماماً؟"
+
+msgid "Invalid request."
+msgstr "طلب غير صالح."
+
+msgid "Order updated to Processing."
+msgstr "تم تحديث الطلب إلى قيد التنفيذ."
+
+msgid "Payment rejected. Order is now Pending Payment for re-upload."
+msgstr "تم رفض الدفع. الطلب الآن بانتظار الدفع لإعادة الرفع."
+
+msgid "Order cancelled."
+msgstr "تم إلغاء الطلب."
+
+msgid "Invalid action."
+msgstr "إجراء غير صالح."
+
+msgid "Accept payments via Instapay. Customers will upload a screenshot of their transaction after checkout."
+msgstr "اقبل المدفوعات عبر إنستاباي. سيقوم العملاء برفع لقطة شاشة لمعاملتهم بعد الدفع."
+
+msgid "Action Required: Payment Receipt Rejected"
+msgstr "إجراء مطلوب: تم رفض إيصال الدفع"
+
+msgid "Add detailed notes to the order when admins accept/reject payments"
+msgstr "إضافة ملاحظات مفصلة للطلب عند قبول/رفض المدفوعات من قبل المشرفين"
+
+msgid "Are you sure you want to REJECT this payment and require the customer to pay/upload again?"
+msgstr "هل أنت متأكد أنك تريد رفض هذه الدفعة ومطالبة العميل بالدفع/الرفع مرة أخرى؟"
+
+msgid "Audit Logging"
+msgstr "سجلات التدقيق"
+
+msgid "Auto Image Compression"
+msgstr "ضغط الصور التلقائي"
+
+msgid "Automatically compress and resize uploaded receipts"
+msgstr "ضغط وتغيير حجم الإيصالات المرفوعة تلقائيًا"
+
+msgid "Automatically delete receipts for cancelled/failed orders older than 30 days"
+msgstr "حذف إيصالات الطلبات الملغاة/الفاشلة التي يزيد عمرها عن 30 يومًا تلقائيًا"
+
+msgid "Awaiting Instapay payment receipt."
+msgstr "في انتظار إيصال دفع إنستاباي."
+
+msgid "Click here to upload a new receipt"
+msgstr "انقر هنا لرفع إيصال جديد"
+
+msgid "Click or Drag image here"
+msgstr "انقر أو اسحب الصورة هنا"
+
+msgid "Enable automated emails when a receipt is rejected"
+msgstr "تمكين رسائل البريد الإلكتروني الآلية عند رفض الإيصال"
+
+msgid "Enter reason for rejection..."
+msgstr "أدخل سبب الرفض..."
+
+msgid "Failed to save file securely. Please check directory permissions."
+msgstr "فشل حفظ الملف بأمان. يرجى التحقق من أذونات الدليل."
+
+msgid "File size exceeds 5MB. Please upload a smaller image."
+msgstr "حجم الملف يتجاوز 5 ميغابايت. يرجى رفع صورة أصغر."
+
+msgid "Hello %s,"
+msgstr "مرحبًا %s،"
+
+msgid "Instapay (Egypt)"
+msgstr "إنستاباي (مصر)"
+
+msgid "Instapay Receipts Awaiting Review"
+msgstr "إيصالات إنستاباي بانتظار المراجعة"
+
+msgid "Instapay Verification"
+msgstr "تحقق إنستاباي"
+
+msgid "Instapay WooCommerce Gateway requires WooCommerce to be installed and active."
+msgstr "بوابة إنستاباي لووكومرس تتطلب تثبيت وتفعيل ووكومرس."
+
+msgid "Instapay payment %s by manager (%s)."
+msgstr "تم %s دفع إنستاباي بواسطة المدير (%s)."
+
+msgid "Instapay receipt uploaded via API. Awaiting manager approval."
+msgstr "تم رفع إيصال إنستاباي عبر API. بانتظار موافقة المدير."
+
+msgid "Invalid file type. Only JPG, PNG, and WebP images are allowed."
+msgstr "نوع ملف غير صالح. يُسمح فقط بصور JPG و PNG و WebP."
+
+msgid "Invalid order ID or key."
+msgstr "معرف أو مفتاح الطلب غير صالح."
+
+msgid "Invalid order."
+msgstr "طلب غير صالح."
+
+msgid "Invalid parameters."
+msgstr "معلمات غير صالحة."
+
+msgid "Missing parameters."
+msgstr "معلمات مفقودة."
+
+msgid "No file uploaded or an upload error occurred."
+msgstr "لم يتم رفع أي ملف أو حدث خطأ أثناء الرفع."
+
+msgid "No file uploaded."
+msgstr "لم يتم رفع أي ملف."
+
+msgid "No orders currently awaiting review."
+msgstr "لا توجد طلبات بانتظار المراجعة حاليًا."
+
+msgid "Order status updated successfully."
+msgstr "تم تحديث حالة الطلب بنجاح."
+
+msgid "Payment Receipt Rejected"
+msgstr "تم رفض إيصال الدفع"
+
+msgid "Permission denied."
+msgstr "إذن مرفوض."
+
+msgid "Please securely upload a screenshot of your successful transaction."
+msgstr "يرجى رفع لقطة شاشة لمعاملتك الناجحة بأمان."
+
+msgid "Please select an image file first."
+msgstr "يرجى تحديد ملف صورة أولاً."
+
+msgid "Processing..."
+msgstr "جاري المعالجة..."
+
+msgid "Reason:"
+msgstr "السبب:"
+
+msgid "Reason: %s"
+msgstr "السبب: %s"
+
+msgid "Receipt attached"
+msgstr "تم إرفاق الإيصال"
+
+msgid "Receipt uploaded - Awaiting review"
+msgstr "تم رفع الإيصال - بانتظار المراجعة"
+
+msgid "Receipt uploaded successfully."
+msgstr "تم رفع الإيصال بنجاح."
+
+msgid "Rejection Emails"
+msgstr "رسائل البريد الإلكتروني للرفض"
+
+msgid "Rejection Reason (Optional):"
+msgstr "سبب الرفض (اختياري):"
+
+msgid "Securely Upload Receipt"
+msgstr "رفع الإيصال بأمان"
+
+msgid "Security verification failed."
+msgstr "فشل التحقق من الأمان."
+
+msgid "Status updated via Instapay quick action."
+msgstr "تم تحديث الحالة عبر إجراء إنستاباي السريع."
+
+msgid "Storage Cleanup"
+msgstr "تنظيف مساحة التخزين"
+
+msgid "Supports: JPG, PNG, WebP (Max 5MB)"
+msgstr "يدعم: JPG، PNG، WebP (الحد الأقصى 5 ميغابايت)"
+
+msgid "Upload Payment Receipt"
+msgstr "رفع إيصال الدفع"
+
+msgid "View All Pending"
+msgstr "عرض كل المعلقات"
+
+msgid "We reviewed your Instapay payment receipt for order #%s, but unfortunately it was invalid or unreadable."
+msgstr "لقد راجعنا إيصال دفع إنستاباي الخاص بك للطلب #%s، ولكن للأسف كان غير صالح أو غير قابل للقراءة."
