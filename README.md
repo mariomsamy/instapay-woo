@@ -36,17 +36,17 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 
 ### 📸 Screenshots
 
-| Admin Order Verification | Orders List Custom Column |
-|:---:|:---:|
-| ![Admin Order View](img/screenshots/admin-order-view.png) | ![Orders List](img/screenshots/admin-orders-list.png) |
-
-| Reject Confirmation | Frontend Rejected Message |
-|:---:|:---:|
-| ![Reject Confirmation](img/screenshots/reject-confirmation.png) | ![Frontend Message](img/screenshots/frontend-rejected-message.png) |
-
-| Audit Order Notes |
-|:---:|
-| ![Order Notes Log](img/screenshots/order-note-log.png) |
+<p align="center">
+  <img src="img/screenshots/1.png" width="30%" />
+  <img src="img/screenshots/2.png" width="30%" />
+  <img src="img/screenshots/3.png" width="30%" />
+  <img src="img/screenshots/4.png" width="30%" />
+  <img src="img/screenshots/5.png" width="30%" />
+  <img src="img/screenshots/6.png" width="30%" />
+  <img src="img/screenshots/7.png" width="30%" />
+  <img src="img/screenshots/8.png" width="30%" />
+  <img src="img/screenshots/9.png" width="30%" />
+</p>
 
 ### 📥 Installation
 1. Download the latest `instapay-woo.zip` release.
@@ -90,17 +90,17 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 
 ### 📸 لقطات الشاشة
 
-| مراجعة الطلب من الإدارة | عمود مخصص في قائمة الطلبات |
-|:---:|:---:|
-| ![مراجعة الطلب](img/screenshots/admin-order-view.png) | ![قائمة الطلبات](img/screenshots/admin-orders-list.png) |
-
-| تأكيد الرفض | رسالة الرفض للعميل |
-|:---:|:---:|
-| ![تأكيد الرفض](img/screenshots/reject-confirmation.png) | ![رسالة الرفض](img/screenshots/frontend-rejected-message.png) |
-
-| سجلات التدقيق (ملاحظات الطلب) |
-|:---:|
-| ![سجلات التدقيق](img/screenshots/order-note-log.png) |
+<p align="center">
+  <img src="img/screenshots/1.png" width="30%" />
+  <img src="img/screenshots/2.png" width="30%" />
+  <img src="img/screenshots/3.png" width="30%" />
+  <img src="img/screenshots/4.png" width="30%" />
+  <img src="img/screenshots/5.png" width="30%" />
+  <img src="img/screenshots/6.png" width="30%" />
+  <img src="img/screenshots/7.png" width="30%" />
+  <img src="img/screenshots/8.png" width="30%" />
+  <img src="img/screenshots/9.png" width="30%" />
+</p>
 
 ### 📥 طريقة التثبيت
 1. قم بتنزيل أحدث إصدار من ملف `instapay-woo.zip`.
