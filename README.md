@@ -34,6 +34,20 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 - **Headless Mobile Ready (REST API):** Includes a secure, built-in REST API endpoint (`POST /wp-json/wc/v3/instapay/upload`) to accept mobile application uploads.
 - **Audit Logging:** Logs all admin actions (Accept, Reject + Reason) directly into the WooCommerce Order Notes.
 
+### 📸 Screenshots
+
+| Admin Order Verification | Orders List Custom Column |
+|:---:|:---:|
+| ![Admin Order View](img/screenshots/admin-order-view.png) | ![Orders List](img/screenshots/admin-orders-list.png) |
+
+| Reject Confirmation | Frontend Rejected Message |
+|:---:|:---:|
+| ![Reject Confirmation](img/screenshots/reject-confirmation.png) | ![Frontend Message](img/screenshots/frontend-rejected-message.png) |
+
+| Audit Order Notes |
+|:---:|
+| ![Order Notes Log](img/screenshots/order-note-log.png) |
+
 ### 📥 Installation
 1. Download the latest `instapay-woo.zip` release.
 2. Go to your WordPress Admin panel > **Plugins** > **Add New**.
@@ -73,6 +87,20 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 - **مرفقات بريد الإدارة:** عند إنشاء طلب إنستاباي جديد، تُرفق صورة الإيصال تلقائياً ببريد "الطلب الجديد" المُرسل إلى مدير المتجر.
 - **دعم تطبيقات الهاتف (REST API):** يتضمن نقطة نهاية API مدمجة (`POST /wp-json/wc/v3/instapay/upload`) لاستقبال الإيصالات المرفوعة عبر تطبيقات الهواتف المحمولة.
 - **سجلات التدقيق:** تسجيل جميع إجراءات المشرفين (قبول، رفض + السبب) مباشرة في ملاحظات طلب ووكومرس.
+
+### 📸 لقطات الشاشة
+
+| مراجعة الطلب من الإدارة | عمود مخصص في قائمة الطلبات |
+|:---:|:---:|
+| ![مراجعة الطلب](img/screenshots/admin-order-view.png) | ![قائمة الطلبات](img/screenshots/admin-orders-list.png) |
+
+| تأكيد الرفض | رسالة الرفض للعميل |
+|:---:|:---:|
+| ![تأكيد الرفض](img/screenshots/reject-confirmation.png) | ![رسالة الرفض](img/screenshots/frontend-rejected-message.png) |
+
+| سجلات التدقيق (ملاحظات الطلب) |
+|:---:|
+| ![سجلات التدقيق](img/screenshots/order-note-log.png) |
 
 ### 📥 طريقة التثبيت
 1. قم بتنزيل أحدث إصدار من ملف `instapay-woo.zip`.
