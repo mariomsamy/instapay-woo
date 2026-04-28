@@ -2,7 +2,7 @@
 
 A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce. Allow your customers to seamlessly check out via Instapay (Egypt) with automated receipt screenshot uploads, secure storage, and advanced administrative dashboards.
 
-**👨‍💻 Developed by:** [Recipe Codes](https://recipecodes.com)  
+**👨‍💻 Developed by:** [Recipe Codes](https://recipe.codes)  
 **🌐 Author:** Mario M. Samy
 
 *(Scroll down for Arabic | انزل للأسفل للغة العربية)*
@@ -37,15 +37,15 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 ### 📸 Screenshots
 
 <p align="center">
-  <img src="img/screenshots/1.png" width="30%" />
-  <img src="img/screenshots/2.png" width="30%" />
-  <img src="img/screenshots/3.png" width="30%" />
-  <img src="img/screenshots/4.png" width="30%" />
-  <img src="img/screenshots/5.png" width="30%" />
-  <img src="img/screenshots/6.png" width="30%" />
-  <img src="img/screenshots/7.png" width="30%" />
-  <img src="img/screenshots/8.png" width="30%" />
-  <img src="img/screenshots/9.png" width="30%" />
+  <img src="img/screenshots/1.png" width="100%" />
+  <img src="img/screenshots/2.png" width="100%" />
+  <img src="img/screenshots/3.png" width="100%" />
+  <img src="img/screenshots/4.png" width="100%" />
+  <img src="img/screenshots/5.png" width="100%" />
+  <img src="img/screenshots/6.png" width="100%" />
+  <img src="img/screenshots/7.png" width="100%" />
+  <img src="img/screenshots/8.png" width="100%" />
+  <img src="img/screenshots/9.png" width="100%" />
 </p>
 
 ### 📥 Installation
@@ -62,8 +62,8 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 
 إضافة احترافية ومتقدمة لبوابة دفع إنستاباي الخاصة بووكومرس. تتيح لعملائك الدفع بسلاسة عبر إنستاباي (مصر) مع ميزات الرفع التلقائي لصور الإيصالات، التخزين الآمن، ولوحات تحكم إدارية متطورة.
 
-**👨‍💻 تم التطوير بواسطة:** [Recipe Codes](https://recipecodes.com)  
-**🌐 المبرمج:** ماريو م. سامي
+**👨‍💻 تم التطوير بواسطة:** [Recipe Codes](https://recipe.codes)  
+**🌐 المبرمج:** Mario M. Samy
 
 ### ✨ المميزات
 
@@ -91,15 +91,15 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 ### 📸 لقطات الشاشة
 
 <p align="center">
-  <img src="img/screenshots/1.png" width="30%" />
-  <img src="img/screenshots/2.png" width="30%" />
-  <img src="img/screenshots/3.png" width="30%" />
-  <img src="img/screenshots/4.png" width="30%" />
-  <img src="img/screenshots/5.png" width="30%" />
-  <img src="img/screenshots/6.png" width="30%" />
-  <img src="img/screenshots/7.png" width="30%" />
-  <img src="img/screenshots/8.png" width="30%" />
-  <img src="img/screenshots/9.png" width="30%" />
+  <img src="img/screenshots/1.png" width="100%" />
+  <img src="img/screenshots/2.png" width="100%" />
+  <img src="img/screenshots/3.png" width="100%" />
+  <img src="img/screenshots/4.png" width="100%" />
+  <img src="img/screenshots/5.png" width="100%" />
+  <img src="img/screenshots/6.png" width="100%" />
+  <img src="img/screenshots/7.png" width="100%" />
+  <img src="img/screenshots/8.png" width="100%" />
+  <img src="img/screenshots/9.png" width="100%" />
 </p>
 
 ### 📥 طريقة التثبيت
