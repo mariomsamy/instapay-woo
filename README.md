@@ -1,9 +1,11 @@
-# Instapay WooCommerce Gateway 🚀
+# Instapay Gateway for Egypt 🚀
 
 A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce. Allow your customers to seamlessly check out via Instapay (Egypt) with automated receipt screenshot uploads, secure storage, and advanced administrative dashboards.
 
 **👨‍💻 Developed by:** [Recipe Codes](https://recipe.codes)  
 **🌐 Author:** Mario M. Samy
+
+**Contributor credit:** Security hardening in version 1.2.0 includes work contributed by [Abdelrahman Elawadi](https://github.com/abdelrahman-elawadi) through his public fork. Recipe Codes and Mario M. Samy remain the plugin author and copyright owner.
 
 *(Scroll down for Arabic | انزل للأسفل للغة العربية)*
 
@@ -18,7 +20,7 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 - **Drag-and-Drop Receipt Upload:** Modern, beautiful, and secure image uploader for users to attach their payment proofs after placing an order.
 - **Smart Currency Restriction:** The gateway automatically hides itself for non-EGP currencies to prevent invalid transactions.
 - **Auto Image Compression:** Receipt images are automatically compressed, resized, and converted to modern formats (saving bandwidth and disk space).
-- **100% Arabic & English Translation:** Full localization (`.po`/`.mo`) baked in for both standard texts and error messages.
+- **Arabic & English Localization:** Translation catalogs are included; new strings fall back to English until their Arabic translations are completed.
 
 **💼 Administrator Control**
 - **"Quick Action" Approval:** Approve, Reject, or Cancel pending payments instantly using AJAX buttons inside the order meta box.
@@ -30,8 +32,8 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 **🛡️ Security & Automation**
 - **Secure File Storage:** Receipts are stored in a dedicated protected folder (`/wp-content/uploads/instapay_receipts`) with strict `.htaccess` rules and direct access blocking.
 - **Automatic Storage Cleanup (Cron):** A scheduled daily background task automatically deletes rejected/cancelled receipt images older than 30 days, saving hosting disk space.
-- **Admin Email Attachments:** When a new Instapay order is placed, the receipt image is automatically attached to the "New Order" email sent to the store admin.
-- **Headless Mobile Ready (REST API):** Includes a secure, built-in REST API endpoint (`POST /wp-json/wc/v3/instapay/upload`) to accept mobile application uploads.
+- **Admin Email Attachments:** After a receipt is uploaded, the store administrator receives a review notification with the validated receipt attached.
+- **Headless Mobile Ready (REST API):** Optional receipt uploads are available at `POST /wp-json/instapay-gateway-for-egypt/v1/receipt` and are disabled by default until enabled by an administrator.
 - **Audit Logging:** Logs all admin actions (Accept, Reject + Reason) directly into the WooCommerce Order Notes.
 
 ### 📸 Screenshots
@@ -49,7 +51,7 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 </p>
 
 ### 📥 Installation
-1. Download the latest `instapay-woo.zip` release.
+1. Download the latest `instapay-gateway-for-egypt.zip` release.
 2. Go to your WordPress Admin panel > **Plugins** > **Add New**.
 3. Click **Upload Plugin** and select the `.zip` file.
 4. Click **Install Now** and then **Activate**.
@@ -84,8 +86,8 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 **🛡️ الأمان والأتمتة**
 - **تخزين آمن للملفات:** يتم تخزين الإيصالات في مجلد محمي مخصص (`/wp-content/uploads/instapay_receipts`) بفضل قواعد `.htaccess` صارمة.
 - **تنظيف مساحة التخزين تلقائياً:** مهمة يومية مبرمجة (Cron) تحذف إيصالات الطلبات المرفوضة/الملغاة التي مر عليها أكثر من 30 يوماً.
-- **مرفقات بريد الإدارة:** عند إنشاء طلب إنستاباي جديد، تُرفق صورة الإيصال تلقائياً ببريد "الطلب الجديد" المُرسل إلى مدير المتجر.
-- **دعم تطبيقات الهاتف (REST API):** يتضمن نقطة نهاية API مدمجة (`POST /wp-json/wc/v3/instapay/upload`) لاستقبال الإيصالات المرفوعة عبر تطبيقات الهواتف المحمولة.
+- **مرفقات بريد الإدارة:** بعد رفع الإيصال، يتلقى مدير المتجر إشعاراً للمراجعة مرفقاً به الإيصال الذي تم التحقق منه.
+- **دعم تطبيقات الهاتف (REST API):** تتوفر نقطة نهاية اختيارية (`POST /wp-json/instapay-gateway-for-egypt/v1/receipt`) ويتم تعطيلها افتراضياً حتى يقوم مدير المتجر بتفعيلها.
 - **سجلات التدقيق:** تسجيل جميع إجراءات المشرفين (قبول، رفض + السبب) مباشرة في ملاحظات طلب ووكومرس.
 
 ### 📸 لقطات الشاشة
@@ -103,12 +105,35 @@ A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce
 </p>
 
 ### 📥 طريقة التثبيت
-1. قم بتنزيل أحدث إصدار من ملف `instapay-woo.zip`.
+1. قم بتنزيل أحدث إصدار من ملف `instapay-gateway-for-egypt.zip`.
 2. اذهب إلى لوحة تحكم ووردبريس > **إضافات** > **أضف جديد**.
 3. انقر على **رفع إضافة** واختر ملف `.zip`.
 4. انقر على **التنصيب الآن** ثم **تفعيل**.
 5. انتقل إلى **ووكومرس > الإعدادات > المدفوعات**.
 6. ابحث عن **إنستاباي (مصر)** وانقر على **إدارة** لضبط إعدادات البوابة الخاصة بك.
+
+---
+## Release Notes
+
+### 1.2.0
+
+- Integrated and extended Abdelrahman Elawadi's receipt-security contribution without changing the original Recipe Codes/Mario M. Samy ownership or copyright.
+- Updated the plugin name, package, text domain, REST namespace, and translation filenames to Instapay Gateway for Egypt; compatibility-sensitive PHP prefixes and saved-data keys remain unchanged.
+- Added authorization and nonce checks to receipt viewing, with strict protected-directory path validation.
+- Hardened image uploads with magic-byte MIME verification, randomized names, size limits, metadata removal, order-state validation, and per-order upload locking.
+- Added HPOS-compatible order metadata access and declared WooCommerce HPOS compatibility.
+- Restricted manager quick actions and blocked payment acceptance when no valid receipt exists.
+- Made REST uploads opt-in, moved them to a plugin-owned namespace, and applied the same order and upload protections as the browser flow.
+- Corrected cron lifecycle handling and secure receipt cleanup.
+- Replaced the ineffective New Order email attachment hook with a manager review email sent after successful receipt upload.
+- Added compatible receipt-directory deny files for Apache and IIS while documenting the Nginx configuration requirement.
+- Regenerated the translation template and merged the Arabic and English catalogs with Recipe Codes metadata.
+- Removed duplicate AJAX handlers and all embedded/inline CSS and JavaScript.
+- Added dedicated, conditionally enqueued `assets/css/gateway.css` and `assets/js/gateway.js` files with jQuery declared as a dependency.
+- Improved responsive payment instructions, keyboard focus, upload feedback, accessible status announcements, error recovery, receipt previews, and admin action controls.
+- Updated compatibility metadata and prepared a clean WordPress.org release package without hidden macOS files.
+
+See `RELEASE-NOTES.md` for verification evidence and known test limitations.
 
 ---
 ## 📄 License | الترخيص

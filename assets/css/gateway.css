@@ -1,0 +1,293 @@
+.instapay-payment-card {
+	margin-bottom: 2em;
+	padding: 24px;
+	background: #faf7fc;
+	border: 1px solid #ddd4e5;
+	border-radius: 8px;
+}
+
+.instapay-payment-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 15px;
+	color: #56207a;
+	font-size: 24px;
+}
+
+.instapay-title-logo {
+	width: auto;
+	height: 30px;
+}
+
+.instapay-payment-desc,
+.instapay-upload-desc {
+	color: #4b5563;
+	line-height: 1.6;
+}
+
+.instapay-flex-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 20px;
+}
+
+.instapay-qr-box {
+	padding: 14px;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+}
+
+.instapay-qr-box img {
+	display: block;
+	width: auto;
+	max-width: 180px;
+	height: auto;
+}
+
+.instapay-ipa-box {
+	flex: 1 1 250px;
+}
+
+.instapay-ipa-label {
+	margin: 0 0 8px;
+	color: #5f6875;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.instapay-ipa-value {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 0 6px;
+	padding: 12px 16px;
+	overflow-wrap: anywhere;
+	background: #f4edf8;
+	border: 1px dashed #af8bc4;
+	border-radius: 6px;
+	color: #3f1659;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.instapay-upload-container {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 24px;
+	padding: 28px;
+	background: #fff;
+	border: 1px solid #d6c7df;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.instapay-upload-logo {
+	display: block;
+	width: auto;
+	height: 50px;
+	margin: 0 auto 16px;
+}
+
+.instapay-upload-title {
+	margin: 0 0 8px;
+	color: #3f1659;
+	font-size: 22px;
+}
+
+.instapay-dropzone {
+	position: relative;
+	margin-bottom: 18px;
+	padding: 36px 18px;
+	background: #faf7fc;
+	border: 2px dashed #7d3a9f;
+	border-radius: 8px;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.instapay-dropzone:hover,
+.instapay-dropzone:focus-within,
+.instapay-dropzone.is-dragover {
+	background: #f3eaf7;
+	border-color: #56207a;
+}
+
+.instapay-dropzone.has-file {
+	background: #effaf3;
+	border-color: #168148;
+}
+
+.instapay-receipt-input {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.instapay-dropzone-icon {
+	width: 40px;
+	height: 40px;
+	color: #56207a;
+	font-size: 40px;
+}
+
+.instapay-dropzone-text {
+	margin: 8px 0 4px;
+	color: #3f1659;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.instapay-dropzone-subtext {
+	margin: 0;
+	color: #5f6875;
+}
+
+.instapay-file-name {
+	display: none;
+	margin-top: 12px;
+	padding: 8px;
+	background: #dcfce7;
+	border-radius: 4px;
+	color: #166534;
+	font-weight: 600;
+	overflow-wrap: anywhere;
+}
+
+.instapay-file-name.is-visible {
+	display: block;
+}
+
+.instapay-submit-btn {
+	display: inline-block;
+	box-sizing: border-box;
+	max-width: 320px;
+	width: 100%;
+	padding: 12px 24px;
+	background: #6b278d;
+	border: 1px solid #6b278d;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.instapay-submit-btn:hover,
+.instapay-submit-btn:focus {
+	background: #4f1c69;
+	border-color: #4f1c69;
+	color: #fff;
+}
+
+.instapay-submit-btn:disabled {
+	opacity: 0.65;
+	cursor: wait;
+}
+
+.instapay-quick-pay {
+	margin-top: 12px;
+}
+
+.instapay-upload-status {
+	min-height: 24px;
+	margin-top: 12px;
+	font-weight: 600;
+}
+
+.instapay-upload-status.is-error,
+.instapay-error-message,
+.instapay-no-receipt,
+.instapay-review-note {
+	color: #b42318;
+}
+
+.instapay-upload-status.is-success {
+	color: #067647;
+}
+
+.instapay-receipt-image,
+.instapay-admin-receipt {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+.instapay-success-message {
+	border-top-color: #168148;
+}
+
+.instapay-admin-actions textarea {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 6px 0 10px;
+}
+
+.instapay-admin-actions .instapay-quick-action {
+	width: 100%;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.instapay-admin-actions .instapay-reject-action {
+	border-color: #b42318;
+	color: #b42318;
+}
+
+.instapay-dashboard-order {
+	margin-bottom: 8px;
+}
+
+.instapay-dashboard-order span {
+	color: #646970;
+	font-size: 12px;
+}
+
+.instapay-receipt-review {
+	color: #b45309;
+}
+
+.instapay-receipt-attached {
+	color: #168148;
+}
+
+.instapay-receipt-empty {
+	color: #8c8f94;
+}
+
+@media (max-width: 600px) {
+	.instapay-payment-card,
+	.instapay-upload-container {
+		padding: 16px;
+	}
+
+	.instapay-payment-title,
+	.instapay-upload-title {
+		font-size: 20px;
+	}
+
+	.instapay-qr-box {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.instapay-qr-box img {
+		margin: 0 auto;
+	}
+
+	.instapay-ipa-box {
+		text-align: center;
+	}
+
+	.instapay-ipa-value {
+		font-size: 18px;
+	}
+}
