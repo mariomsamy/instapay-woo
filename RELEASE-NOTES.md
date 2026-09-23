@@ -45,6 +45,10 @@ The plugin name, release package, text domain, REST namespace, and translation f
 - Admin actions use consistent full-width controls with clear destructive styling.
 - Admin actions that cannot apply to the current order status are hidden instead of failing after a click.
 
+## Documentation
+
+- Condensed the GitHub README, removed duplicated release details, and kept the bilingual setup, security, API, screenshots, ownership, and contributor information easier to scan.
+
 ## Verification evidence
 
 - `php -l instapay-woo.php`: passed on PHP 8.5.7.

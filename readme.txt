@@ -63,6 +63,7 @@ The plugin runs a daily background task (cron) that automatically deletes any re
 == Changelog ==
 
 = 1.2.0 =
+* Documentation: Condensed and reorganized the GitHub README for faster scanning and reduced duplication.
 * Branding: Updated the plugin name, package, text domain, REST namespace, and translation filenames to Instapay Gateway for Egypt while retaining compatibility-sensitive PHP prefixes and saved-data keys.
 * Security: Added nonce-protected receipt viewing with customer ownership, order-key, and manager capability checks.
 * Security: Validated receipt paths against the protected receipt directory before viewing, attaching, or deleting files.
