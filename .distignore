@@ -1,0 +1,9 @@
+.git
+.github
+.gitignore
+.distignore
+.DS_Store
+AUDIT-*.md
+audit_findings.md
+img/screenshots
+*.zip

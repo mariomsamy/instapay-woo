@@ -1,180 +1,823 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Instapay Gateway for Egypt 1.2.0\n"
+"Project-Id-Version: Instapay Gateway for Egypt 1.3.0\n"
 "Report-Msgid-Bugs-To: info@recipe.codes\n"
-"POT-Creation-Date: 2026-09-23 15:27+0300\n"
-"PO-Revision-Date: 2026-09-23 15:24+0300\n"
+"POT-Creation-Date: 2026-10-01T22:45:14+00:00\n"
+"PO-Revision-Date: 2026-10-02 02:00+0300\n"
 "Last-Translator: Recipe Codes <info@recipe.codes>\n"
 "Language-Team: Arabic <info@recipe.codes>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5);\n"
 
-#: instapay-woo.php:63
-#, fuzzy
+#. Plugin Name of the plugin
+#: instapay-woo.php instapay-woo.php:1346
+msgid "Instapay Gateway for Egypt"
+msgstr "بوابة إنستاباي لمصر"
+
+#. Description of the plugin
+#: instapay-woo.php includes/class-instapay-github-updater.php:194
+msgid ""
+"Instapay payment gateway for WooCommerce with secure receipt upload and "
+"manager verification."
+msgstr ""
+"بوابة دفع إنستاباي لمتاجر WooCommerce مع رفع آمن للإيصالات ومراجعة من المدير."
+
+#. Author of the plugin
+#: instapay-woo.php
+msgid "Recipe Codes"
+msgstr "Recipe Codes"
+
+#. Author URI of the plugin
+#: instapay-woo.php
+msgid "https://recipe.codes"
+msgstr "https://recipe.codes"
+
+#: includes/class-instapay-github-updater.php:195
+msgid "Release notes on GitHub"
+msgstr "ملاحظات الإصدار على GitHub"
+
+#: includes/class-instapay-github-updater.php:210
+msgid "The update package could not be verified and was not installed."
+msgstr "تعذر التحقق من حزمة التحديث ولم يتم تثبيتها."
+
+#: includes/class-instapay-github-updater.php:222
+msgid ""
+"The downloaded update did not match its published checksum and was not "
+"installed."
+msgstr ""
+"التحديث الذي تم تنزيله لا يطابق المجموع الاختباري المنشور، ولم يتم تثبيته."
+
+#: includes/class-instapay-github-updater.php:246
+msgid "The update package does not contain the Instapay plugin."
+msgstr "حزمة التحديث لا تحتوي على إضافة إنستاباي."
+
+#: includes/class-instapay-github-updater.php:254
+#: includes/class-instapay-github-updater.php:261
+msgid "Could not prepare the update package."
+msgstr "تعذر تجهيز حزمة التحديث."
+
+#: includes/class-wc-gateway-instapay.php:29
+msgid "Instapay (Egypt)"
+msgstr "إنستاباي (مصر)"
+
+#: includes/class-wc-gateway-instapay.php:30
+msgid ""
+"Accept Instapay payments and let customers securely upload a transaction "
+"receipt."
+msgstr "اقبل المدفوعات عبر إنستاباي، ودع العملاء يرفعون إيصال التحويل بأمان."
+
+#: includes/class-wc-gateway-instapay.php:55
+msgid "Enable/Disable"
+msgstr "تفعيل/تعطيل"
+
+#: includes/class-wc-gateway-instapay.php:57
+msgid "Enable Instapay Payment"
+msgstr "تفعيل الدفع عبر إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:61
+msgid "Title"
+msgstr "العنوان"
+
+#: includes/class-wc-gateway-instapay.php:63
+msgid "The payment method title shown at checkout."
+msgstr "اسم طريقة الدفع الذي يظهر في صفحة إتمام الطلب."
+
+#: includes/class-wc-gateway-instapay.php:64
+#: includes/class-wc-instapay-blocks.php:44 instapay-woo.php:1237
+msgid "Instapay"
+msgstr "إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:68
+msgid "Description"
+msgstr "الوصف"
+
+#: includes/class-wc-gateway-instapay.php:70
+msgid "Payment instructions shown to the customer."
+msgstr "تعليمات الدفع التي تظهر للعميل."
+
+#: includes/class-wc-gateway-instapay.php:71
+msgid ""
+"Please transfer the total amount to our Instapay account and upload the "
+"receipt screenshot."
+msgstr ""
+"يرجى تحويل المبلغ الإجمالي إلى حساب إنستاباي الخاص بنا ورفع لقطة شاشة "
+"للإيصال."
+
+#: includes/class-wc-gateway-instapay.php:74
+msgid "Instapay Payment Address (IPA)"
+msgstr "عنوان الدفع إنستاباي (IPA)"
+
+#: includes/class-wc-gateway-instapay.php:76
+msgid "Your Instapay address, for example username@instapay."
+msgstr "عنوان إنستاباي الخاص بك، مثل username@instapay."
+
+#: includes/class-wc-gateway-instapay.php:79
+msgid "Instapay Phone Number"
+msgstr "رقم هاتف إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:81
+msgid "Your mobile number registered with Instapay."
+msgstr "رقم هاتفك المسجل في إنستاباي."
+
+#: includes/class-wc-gateway-instapay.php:84
+msgid "Instapay Payment URL"
+msgstr "رابط الدفع إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:86
+msgid "Optional payment URL shown on mobile devices."
+msgstr "رابط دفع اختياري يظهر على الأجهزة المحمولة."
+
+#: includes/class-wc-gateway-instapay.php:89
+msgid "QR Code Image URL"
+msgstr "رابط صورة رمز QR"
+
+#: includes/class-wc-gateway-instapay.php:91
+msgid ""
+"URL of your Instapay QR code image. Upload it to your Media Library so "
+"customers do not load it from another site."
+msgstr ""
+"رابط صورة رمز QR الخاص بإنستاباي. ارفعها إلى مكتبة الوسائط حتى لا يتم "
+"تحميلها من موقع آخر."
+
+#: includes/class-wc-gateway-instapay.php:94
+msgid "Transaction Reference"
+msgstr "الرقم المرجعي للتحويل"
+
+#: includes/class-wc-gateway-instapay.php:96
+msgid ""
+"Ask customers for the Instapay transaction reference when they upload a "
+"receipt"
+msgstr "اطلب من العملاء الرقم المرجعي لتحويل إنستاباي عند رفع الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:97
+msgid ""
+"Managers are warned when the same reference or the same receipt image is "
+"used on more than one order."
+msgstr ""
+"يتم تنبيه المديرين عند استخدام الرقم المرجعي نفسه أو صورة الإيصال نفسها في "
+"أكثر من طلب."
+
+#: includes/class-wc-gateway-instapay.php:101
+msgid "Cancel Unpaid Orders After (hours)"
+msgstr "إلغاء الطلبات غير المدفوعة بعد (ساعات)"
+
+#: includes/class-wc-gateway-instapay.php:103
+msgid ""
+"Orders still waiting for a receipt are cancelled and their stock released "
+"after this many hours. Use 0 to keep them until you cancel them."
+msgstr ""
+"تُلغى الطلبات التي لا تزال بانتظار الإيصال ويُعاد مخزونها بعد هذا العدد من "
+"الساعات. استخدم 0 للاحتفاظ بها حتى تلغيها بنفسك."
+
+#: includes/class-wc-gateway-instapay.php:111
+msgid "Review Notification Email"
+msgstr "بريد إشعار المراجعة"
+
+#: includes/class-wc-gateway-instapay.php:113
+msgid ""
+"Who is emailed when a receipt is waiting for review. Leave empty to use the "
+"site admin email."
+msgstr ""
+"البريد الذي يُرسل إليه إشعار عند وجود إيصال بانتظار المراجعة. اتركه فارغًا "
+"لاستخدام بريد مدير الموقع."
+
+#: includes/class-wc-gateway-instapay.php:118
+msgid "Attach Receipt to Email"
+msgstr "إرفاق الإيصال بالبريد"
+
+#: includes/class-wc-gateway-instapay.php:120
+msgid "Attach the receipt image to the review notification email"
+msgstr "إرفاق صورة الإيصال ببريد إشعار المراجعة"
+
+#: includes/class-wc-gateway-instapay.php:121
+msgid ""
+"Receipts contain personal financial data. Leave this off to keep them only "
+"on your website."
+msgstr ""
+"تحتوي الإيصالات على بيانات مالية شخصية. اترك هذا الخيار معطلًا للاحتفاظ بها "
+"على موقعك فقط."
+
+#: includes/class-wc-gateway-instapay.php:125
+msgid "Rejection Emails"
+msgstr "رسائل البريد الإلكتروني للرفض"
+
+#: includes/class-wc-gateway-instapay.php:127
+msgid "Email the customer when a receipt is rejected"
+msgstr "إرسال بريد إلى العميل عند رفض الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:131
+msgid "Image Compression"
+msgstr "ضغط الصور"
+
+#: includes/class-wc-gateway-instapay.php:133
+msgid "Resize uploaded receipts to a maximum of 1200 pixels"
+msgstr "تصغير الإيصالات المرفوعة إلى 1200 بكسل كحد أقصى"
+
+#: includes/class-wc-gateway-instapay.php:137
+msgid "Automatic Cleanup"
+msgstr "التنظيف التلقائي"
+
+#: includes/class-wc-gateway-instapay.php:139
+msgid "Delete receipts for failed, cancelled, or refunded orders after 30 days"
+msgstr "حذف إيصالات الطلبات الفاشلة أو الملغاة أو المستردة بعد 30 يومًا"
+
+#: includes/class-wc-gateway-instapay.php:143
+msgid "Paid Receipt Retention (days)"
+msgstr "مدة الاحتفاظ بإيصالات الطلبات المدفوعة (بالأيام)"
+
+#: includes/class-wc-gateway-instapay.php:145
+msgid ""
+"Delete receipts of processing and completed orders this many days after the "
+"order was placed. Use 0 to keep them. Data protection law expects a defined "
+"retention period; keep receipts as long as you need them for accounting and "
+"disputes."
+msgstr ""
+"حذف إيصالات الطلبات قيد التنفيذ والمكتملة بعد هذا العدد من الأيام من تاريخ "
+"الطلب. استخدم 0 للاحتفاظ بها. يتطلب قانون حماية البيانات تحديد مدة للاحتفاظ؛ "
+"احتفظ بالإيصالات طوال المدة التي تحتاجها للمحاسبة والنزاعات."
+
+#: includes/class-wc-gateway-instapay.php:153
+msgid "Audit Notes"
+msgstr "ملاحظات التدقيق"
+
+#: includes/class-wc-gateway-instapay.php:155
+msgid "Record manager actions in order notes"
+msgstr "تسجيل إجراءات المديرين في ملاحظات الطلب"
+
+#: includes/class-wc-gateway-instapay.php:159
+msgid "REST Uploads"
+msgstr "الرفع عبر REST"
+
+#: includes/class-wc-gateway-instapay.php:161
+msgid "Enable receipt uploads through the REST API"
+msgstr "تفعيل رفع الإيصالات عبر REST API"
+
+#: includes/class-wc-gateway-instapay.php:162
+msgid ""
+"Leave disabled unless a trusted mobile or headless client needs this "
+"endpoint."
+msgstr "اتركه معطلًا ما لم يحتج تطبيق موثوق إلى هذه الواجهة."
+
+#: includes/class-wc-gateway-instapay.php:180
+msgid "Awaiting Instapay payment receipt."
+msgstr "في انتظار إيصال دفع إنستاباي."
+
+#: includes/class-wc-gateway-instapay.php:216
+msgid "Copied"
+msgstr "تم النسخ"
+
+#: includes/class-wc-gateway-instapay.php:216
+msgid "Press and hold to copy"
+msgstr "اضغط مطولًا للنسخ"
+
+#: includes/class-wc-gateway-instapay.php:219
+msgid "Pay with Instapay"
+msgstr "ادفع عبر إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:229
+msgid "Your Instapay payment has been confirmed. Thank you!"
+msgstr "تم تأكيد دفعتك عبر إنستاباي. شكرًا لك!"
+
+#: includes/class-wc-gateway-instapay.php:230
+msgid "We are now preparing your order."
+msgstr "نحن نجهز طلبك الآن."
+
+#: includes/class-wc-gateway-instapay.php:238
+msgid "Receipt uploaded successfully. Your payment is under review."
+msgstr "تم رفع الإيصال بنجاح. دفعتك قيد المراجعة."
+
+#: includes/class-wc-gateway-instapay.php:239
+msgid ""
+"We will check it against your order and email you as soon as it is "
+"confirmed. You do not need to do anything else."
+msgstr ""
+"سنراجعه مقارنةً بطلبك ونرسل إليك بريدًا فور تأكيده. لا تحتاج إلى فعل أي شيء "
+"آخر."
+
+#: includes/class-wc-gateway-instapay.php:253
+#: includes/class-wc-gateway-instapay.php:419
+msgid "Paid"
+msgstr "مدفوع"
+
+#: includes/class-wc-gateway-instapay.php:255
+msgid "Under review"
+msgstr "قيد المراجعة"
+
+#: includes/class-wc-gateway-instapay.php:257
+msgid "Waiting for payment"
+msgstr "بانتظار الدفع"
+
+#: includes/class-wc-gateway-instapay.php:263
+msgid "Send payment"
+msgstr "أرسل المبلغ"
+
+#: includes/class-wc-gateway-instapay.php:264
+msgid "Upload receipt"
+msgstr "ارفع الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:265
+msgid "Confirmation"
+msgstr "التأكيد"
+
+#: includes/class-wc-gateway-instapay.php:267
+msgid "Payment progress"
+msgstr "مراحل الدفع"
+
+#: includes/class-wc-gateway-instapay.php:289
+msgid "Copy"
+msgstr "نسخ"
+
+#: includes/class-wc-gateway-instapay.php:300
+msgid "Send the payment"
+msgstr "أرسل المبلغ"
+
+#: includes/class-wc-gateway-instapay.php:307
+msgid "Amount"
+msgstr "المبلغ"
+
+#: includes/class-wc-gateway-instapay.php:309
+msgid "Instapay address"
+msgstr "عنوان إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:312
+msgid "Phone number"
+msgstr "رقم الهاتف"
+
+#: includes/class-wc-gateway-instapay.php:316
+msgid "Quick Pay via Instapay App"
+msgstr "دفع سريع عبر تطبيق إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:321
+msgid "Instapay QR code"
+msgstr "رمز QR لإنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:322
+msgid "Scan with the Instapay app"
+msgstr "امسح الرمز بتطبيق إنستاباي"
+
+#: includes/class-wc-gateway-instapay.php:337
+msgid "Upload Payment Receipt"
+msgstr "رفع إيصال الدفع"
+
+#: includes/class-wc-gateway-instapay.php:342
+msgid ""
+"Your previous receipt was rejected. Please upload a new valid screenshot."
+msgstr "تم رفض إيصالك السابق. يرجى رفع لقطة شاشة جديدة صحيحة."
+
+#: includes/class-wc-gateway-instapay.php:344 instapay-woo.php:1046
+msgid "Reason:"
+msgstr "السبب:"
+
+#: includes/class-wc-gateway-instapay.php:349
+msgid ""
+"After paying, take a screenshot of the Instapay confirmation screen and "
+"upload it here."
+msgstr "بعد الدفع، التقط لقطة شاشة لصفحة التأكيد في إنستاباي وارفعها هنا."
+
+#: includes/class-wc-gateway-instapay.php:350
+msgid "Please select an image file first."
+msgstr "يرجى تحديد ملف صورة أولاً."
+
+#: includes/class-wc-gateway-instapay.php:350
+msgid "File size exceeds 5MB. Please upload a smaller image."
+msgstr "حجم الملف يتجاوز 5 ميغابايت. يرجى رفع صورة أصغر."
+
+#: includes/class-wc-gateway-instapay.php:350
+msgid "Please choose a JPG, PNG or WebP image."
+msgstr "يرجى اختيار صورة بصيغة JPG أو PNG أو WebP."
+
+#: includes/class-wc-gateway-instapay.php:350
+msgid "Uploading..."
+msgstr "جاري الرفع..."
+
+#: includes/class-wc-gateway-instapay.php:350
+msgid "An error occurred during upload. Please try again."
+msgstr "حدث خطأ أثناء الرفع. يرجى المحاولة مرة أخرى."
+
+#: includes/class-wc-gateway-instapay.php:354
+msgid "Tap to choose a screenshot"
+msgstr "اضغط لاختيار لقطة الشاشة"
+
+#: includes/class-wc-gateway-instapay.php:355
+msgid "or drag it here · JPG, PNG or WebP · up to 5MB"
+msgstr "أو اسحبها إلى هنا · JPG أو PNG أو WebP · حتى 5 ميجابايت"
+
+#: includes/class-wc-gateway-instapay.php:358
+msgid "Selected receipt preview"
+msgstr "معاينة الإيصال المختار"
+
+#: includes/class-wc-gateway-instapay.php:360
+msgid "Tap to choose a different image"
+msgstr "اضغط لاختيار صورة أخرى"
+
+#: includes/class-wc-gateway-instapay.php:362
+msgid "Receipt screenshot"
+msgstr "لقطة شاشة الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:366
+msgid "Transaction reference (optional)"
+msgstr "الرقم المرجعي للتحويل (اختياري)"
+
+#: includes/class-wc-gateway-instapay.php:368
+msgid ""
+"Shown on the Instapay confirmation screen. It helps us find your payment "
+"faster."
+msgstr "يظهر في صفحة التأكيد في إنستاباي، ويساعدنا على العثور على دفعتك بسرعة."
+
+#: includes/class-wc-gateway-instapay.php:375
+msgid "Securely Upload Receipt"
+msgstr "رفع الإيصال بأمان"
+
+#: includes/class-wc-gateway-instapay.php:380
+msgid "Your receipt is stored privately and used only to verify this payment."
+msgstr "يُحفظ إيصالك بشكل خاص ويُستخدم فقط للتحقق من هذه الدفعة."
+
+#: includes/class-wc-gateway-instapay.php:382
+msgid "Privacy policy"
+msgstr "سياسة الخصوصية"
+
+#: includes/class-wc-gateway-instapay.php:396
+msgid "Your Uploaded Receipt"
+msgstr "الإيصال المرفوع"
+
+#: includes/class-wc-gateway-instapay.php:397
+#: includes/class-wc-gateway-instapay.php:450
+msgid "Receipt thumbnail"
+msgstr "صورة مصغرة للإيصال"
+
+#: includes/class-wc-gateway-instapay.php:405
+msgid "This order was not paid via Instapay."
+msgstr "لم يتم دفع هذا الطلب عبر إنستاباي."
+
+#: includes/class-wc-gateway-instapay.php:417
+msgid "Needs review"
+msgstr "بحاجة إلى مراجعة"
+
+#: includes/class-wc-gateway-instapay.php:421
+msgid "Waiting for receipt"
+msgstr "بانتظار الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:426
+msgid "Amount to check"
+msgstr "المبلغ المطلوب التحقق منه"
+
+#: includes/class-wc-gateway-instapay.php:428
+msgid "Transaction reference:"
+msgstr "الرقم المرجعي للتحويل:"
+
+#. translators: %s: human-readable time, e.g. "5 mins"
+#: includes/class-wc-gateway-instapay.php:432
+msgid "Uploaded"
+msgstr "تاريخ الرفع"
+
+#. translators: %s: human-readable time, e.g. "5 mins"
+#: includes/class-wc-gateway-instapay.php:432
+#, php-format
+msgid "%s ago"
+msgstr "منذ %s"
+
+#. translators: %s: comma-separated order numbers
+#: includes/class-wc-gateway-instapay.php:443
+#, php-format
+msgid "Warning: the same receipt image was uploaded on order(s) %s."
+msgstr "تنبيه: تم رفع صورة الإيصال نفسها في الطلب (الطلبات) %s."
+
+#. translators: %s: comma-separated order numbers
+#: includes/class-wc-gateway-instapay.php:447
+#, php-format
+msgid "Warning: the same transaction reference was used on order(s) %s."
+msgstr "تنبيه: تم استخدام الرقم المرجعي نفسه في الطلب (الطلبات) %s."
+
+#: includes/class-wc-gateway-instapay.php:450
+msgid "View Receipt Screenshot"
+msgstr "عرض لقطة شاشة الإيصال"
+
+#: includes/class-wc-gateway-instapay.php:452
+msgid ""
+"Check the amount and date in the receipt against this order, then accept or "
+"reject it below."
+msgstr "طابق المبلغ والتاريخ في الإيصال مع هذا الطلب، ثم اقبله أو ارفضه أدناه."
+
+#: includes/class-wc-gateway-instapay.php:455
+msgid "No receipt has been uploaded yet."
+msgstr "لم يتم رفع أي إيصال بعد."
+
+#: includes/class-wc-gateway-instapay.php:460
+msgid "Accept this payment and mark the order as paid?"
+msgstr "هل تريد قبول هذه الدفعة وتحديد الطلب كمدفوع؟"
+
+#: includes/class-wc-gateway-instapay.php:460
+msgid "Accept Payment"
+msgstr "قبول الدفع"
+
+#: includes/class-wc-gateway-instapay.php:462
+msgid "Reject Payment"
+msgstr "رفض الدفع"
+
+#: includes/class-wc-gateway-instapay.php:463
+msgid "Reason shown to the customer (optional)"
+msgstr "السبب الذي سيظهر للعميل (اختياري)"
+
+#: includes/class-wc-gateway-instapay.php:464
+msgid "For example: the amount does not match the order total."
+msgstr "مثال: المبلغ لا يطابق إجمالي الطلب."
+
+#: includes/class-wc-gateway-instapay.php:465
+msgid "Reject this receipt and require a new upload?"
+msgstr "هل تريد رفض هذا الإيصال وطلب رفع إيصال جديد؟"
+
+#: includes/class-wc-gateway-instapay.php:465
+msgid "Reject and ask for a new receipt"
+msgstr "رفض وطلب إيصال جديد"
+
+#: includes/class-wc-gateway-instapay.php:469
+msgid "Cancel this order completely?"
+msgstr "هل تريد إلغاء هذا الطلب بالكامل؟"
+
+#: includes/class-wc-gateway-instapay.php:469
+msgid "Cancel Order"
+msgstr "إلغاء الطلب"
+
+#: instapay-woo.php:115
 msgid "No file was uploaded."
 msgstr "لم يتم رفع أي ملف."
 
-#: instapay-woo.php:68
+#: instapay-woo.php:121
 msgid "No file uploaded or an upload error occurred."
 msgstr "لم يتم رفع أي ملف أو حدث خطأ أثناء الرفع."
 
-#: instapay-woo.php:85 instapay-woo.php:93
-msgid "A receipt upload is already in progress. Please wait and try again."
-msgstr ""
-
-#: instapay-woo.php:171
+#: instapay-woo.php:261
 msgid "Could not create the receipt upload directory."
-msgstr ""
+msgstr "تعذر إنشاء مجلد رفع الإيصالات."
 
-#: instapay-woo.php:205
-#, fuzzy
+#: instapay-woo.php:293
 msgid ""
 "Instapay Gateway for Egypt requires WooCommerce to be installed and active."
-msgstr "بوابة إنستاباي لووكومرس تتطلب تثبيت وتفعيل ووكومرس."
+msgstr "تتطلب بوابة إنستاباي لمصر تثبيت WooCommerce وتفعيله."
 
-#: instapay-woo.php:205
+#: instapay-woo.php:293
 msgid "Plugin Dependency Error"
-msgstr ""
+msgstr "خطأ في متطلبات الإضافة"
 
-#: instapay-woo.php:232
-#, fuzzy
+#: instapay-woo.php:341
 msgctxt "Order status"
 msgid "Payment Review"
-msgstr "مراجعة الدفع"
+msgstr "قيد مراجعة الدفع"
 
 #. translators: %s: count
-#: instapay-woo.php:238
-#, fuzzy, php-format
+#: instapay-woo.php:347
+#, php-format
 msgid "Payment Review <span class=\"count\">(%s)</span>"
 msgid_plural "Payment Review <span class=\"count\">(%s)</span>"
-msgstr[0] "مراجعة الدفع <span class=\"count\">(%s)</span>"
-msgstr[1] "مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[0] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[1] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[2] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[3] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[4] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
+msgstr[5] "قيد مراجعة الدفع <span class=\"count\">(%s)</span>"
 
-#: instapay-woo.php:249 instapay-woo.php:254
+#: instapay-woo.php:358 instapay-woo.php:363
 msgid "Payment Review"
-msgstr "مراجعة الدفع"
+msgstr "قيد مراجعة الدفع"
 
-#: instapay-woo.php:295
+#: instapay-woo.php:401
+msgid ""
+"To complete your order, send the order total by Instapay and upload a "
+"screenshot of the receipt."
+msgstr "لإتمام طلبك، أرسل إجمالي الطلب عبر إنستاباي وارفع لقطة شاشة للإيصال."
+
+#: instapay-woo.php:406 instapay-woo.php:418
+msgid "Instapay address:"
+msgstr "عنوان إنستاباي:"
+
+#: instapay-woo.php:409 instapay-woo.php:421
+msgid "Instapay phone:"
+msgstr "هاتف إنستاباي:"
+
+#: instapay-woo.php:411
+msgid "Upload your receipt:"
+msgstr "ارفع إيصالك:"
+
+#: instapay-woo.php:415
+msgid "Instapay payment instructions"
+msgstr "تعليمات الدفع عبر إنستاباي"
+
+#: instapay-woo.php:423
+msgid "Upload your receipt"
+msgstr "ارفع إيصالك"
+
+#: instapay-woo.php:479
 msgid "An unexpected error occurred. Please try again."
-msgstr ""
+msgstr "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى."
 
-#: instapay-woo.php:296
+#: instapay-woo.php:480
 msgid "Processing..."
 msgstr "جاري المعالجة..."
 
-#: instapay-woo.php:320
+#: instapay-woo.php:508
+msgid "Instapay Verification"
+msgstr "تحقق إنستاباي"
+
+#: instapay-woo.php:533
 msgid "Invalid security token."
 msgstr "رمز الأمان غير صالح."
 
-#: instapay-woo.php:332
+#: instapay-woo.php:545
 msgid "Unauthorized access."
-msgstr ""
+msgstr "وصول غير مصرح به."
 
-#: instapay-woo.php:337
+#: instapay-woo.php:550
 msgid "Receipt not found or has been removed."
-msgstr ""
+msgstr "الإيصال غير موجود أو تم حذفه."
 
-#: instapay-woo.php:362
+#: instapay-woo.php:604
 msgid "The uploaded file is incomplete."
-msgstr ""
+msgstr "الملف المرفوع غير مكتمل."
 
-#: instapay-woo.php:368
-msgid "Invalid file type. Only JPG, PNG, and WebP images are allowed."
-msgstr "نوع ملف غير صالح. يُسمح فقط بصور JPG و PNG و WebP."
-
-#: instapay-woo.php:372
-msgid "The uploaded file is not a valid image."
-msgstr ""
-
-#: instapay-woo.php:376
+#: instapay-woo.php:608
 msgid "File size too large. Maximum allowed is 5MB."
 msgstr "حجم الملف كبير جداً. الحد الأقصى المسموح به هو 5 ميجابايت."
 
-#: instapay-woo.php:412 instapay-woo.php:466 instapay-woo.php:509
-msgid "Invalid order."
-msgstr "طلب غير صالح."
+#: instapay-woo.php:613
+msgid "Invalid file type. Only JPG, PNG, and WebP images are allowed."
+msgstr "نوع ملف غير صالح. يُسمح فقط بصور JPG و PNG و WebP."
 
-#: instapay-woo.php:422
+#: instapay-woo.php:618
+msgid "The uploaded file is not a valid image."
+msgstr "الملف المرفوع ليس صورة صالحة."
+
+#: instapay-woo.php:624
+msgid "The image dimensions are too large. Please upload a normal screenshot."
+msgstr "أبعاد الصورة كبيرة جدًا. يرجى رفع لقطة شاشة عادية."
+
+#: instapay-woo.php:650
 msgid "Failed to save file securely. Please check directory permissions."
 msgstr "فشل حفظ الملف بأمان. يرجى التحقق من أذونات الدليل."
 
-#: instapay-woo.php:434
-#, fuzzy
-msgid "Instapay Receipt Awaiting Review"
-msgstr "إيصالات إنستاباي بانتظار المراجعة"
+#: instapay-woo.php:658 instapay-woo.php:674 instapay-woo.php:696
+msgid "The image could not be processed. Please upload a different screenshot."
+msgstr "تعذرت معالجة الصورة. يرجى رفع لقطة شاشة أخرى."
 
-#: instapay-woo.php:437
-#, fuzzy, php-format
-msgid "A receipt was uploaded for order #%s and is ready for review."
-msgstr "تم رفع الإيصال بنجاح. الطلب قيد المراجعة."
+#: instapay-woo.php:757 instapay-woo.php:787 instapay-woo.php:945
+msgid "Invalid order."
+msgstr "طلب غير صالح."
 
-#: instapay-woo.php:438
-msgid "Review the order"
-msgstr ""
+#: instapay-woo.php:762
+msgid "A receipt upload is already in progress. Please wait and try again."
+msgstr "هناك عملية رفع إيصال جارية بالفعل. يرجى الانتظار ثم المحاولة مرة أخرى."
 
-#: instapay-woo.php:444
+#: instapay-woo.php:798
+msgid "Too many receipt uploads for this order. Please try again later."
+msgstr "تم رفع عدد كبير من الإيصالات لهذا الطلب. يرجى المحاولة لاحقًا."
+
+#: instapay-woo.php:810
+msgid "This order can no longer accept a receipt."
+msgstr "لم يعد هذا الطلب يقبل إيصالًا."
+
+#. translators: %s: comma-separated order numbers
+#: instapay-woo.php:832
 #, php-format
-msgid "Instapay receipt for order #%s"
+msgid ""
+"Warning: this receipt image is identical to the receipt on order(s) %s. "
+"Check for a reused payment before accepting."
 msgstr ""
+"تنبيه: صورة هذا الإيصال مطابقة لإيصال الطلب (الطلبات) %s. تحقق من عدم إعادة "
+"استخدام دفعة سابقة قبل القبول."
 
-#: instapay-woo.php:453
-msgid "Missing parameters."
-msgstr "معلمات مفقودة."
+#. translators: %s: comma-separated order numbers
+#: instapay-woo.php:836
+#, php-format
+msgid "Warning: this transaction reference was also submitted on order(s) %s."
+msgstr "تنبيه: تم إرسال هذا الرقم المرجعي أيضًا في الطلب (الطلبات) %s."
 
-#: instapay-woo.php:461
-msgid "Security verification failed."
-msgstr "فشل التحقق من الأمان."
+#: instapay-woo.php:842
+msgid "Instapay receipt uploaded via API. Awaiting manager approval."
+msgstr "تم رفع إيصال إنستاباي عبر API. بانتظار موافقة المدير."
 
-#: instapay-woo.php:486
+#: instapay-woo.php:843
 msgid "Instapay receipt uploaded. Awaiting manager approval."
 msgstr "تم رفع إيصال إنستاباي. في انتظار موافقة الإدارة."
 
-#: instapay-woo.php:488
+#: instapay-woo.php:846
+msgid "The customer replaced the Instapay receipt while it was under review."
+msgstr "استبدل العميل إيصال إنستاباي أثناء مراجعته."
+
+#: instapay-woo.php:869
+msgid "Instapay Receipt Awaiting Review"
+msgstr "إيصال إنستاباي بانتظار المراجعة"
+
+#. translators: %s: order number
+#: instapay-woo.php:873
+#, php-format
+msgid "A receipt was uploaded for order #%s and is ready for review."
+msgstr "تم رفع إيصال للطلب رقم %s وهو جاهز للمراجعة."
+
+#: instapay-woo.php:874
+msgid "Review the order"
+msgstr "مراجعة الطلب"
+
+#. translators: %s: order number
+#: instapay-woo.php:884
+#, php-format
+msgid "Instapay receipt for order #%s"
+msgstr "إيصال إنستاباي للطلب رقم %s"
+
+#: instapay-woo.php:893
+msgid "Missing parameters."
+msgstr "معلمات مفقودة."
+
+#: instapay-woo.php:902
+msgid "Security verification failed."
+msgstr "فشل التحقق من الأمان."
+
+#: instapay-woo.php:915
 msgid "Receipt uploaded successfully. Order is under review."
 msgstr "تم رفع الإيصال بنجاح. الطلب قيد المراجعة."
 
-#: instapay-woo.php:496
+#: instapay-woo.php:926
 msgid "Permission denied."
 msgstr "إذن مرفوض."
 
-#: instapay-woo.php:504
+#: instapay-woo.php:940
 msgid "Invalid parameters."
 msgstr "معلمات غير صالحة."
 
-#: instapay-woo.php:518
-msgid "This order status change is not allowed."
-msgstr ""
+#: instapay-woo.php:950
+msgid ""
+"Another action on this order is in progress. Reload the page and try again."
+msgstr "هناك إجراء آخر جارٍ على هذا الطلب. أعد تحميل الصفحة وحاول مرة أخرى."
 
-#: instapay-woo.php:522
+#: instapay-woo.php:967
+msgid "Order status updated successfully."
+msgstr "تم تحديث حالة الطلب بنجاح."
+
+#: instapay-woo.php:982
+msgid ""
+"This order status change is not allowed. The order may already have been "
+"updated; reload the page."
+msgstr ""
+"لا يُسمح بتغيير حالة هذا الطلب. ربما تم تحديث الطلب بالفعل؛ أعد تحميل الصفحة."
+
+#: instapay-woo.php:986
 msgid "A valid receipt is required before accepting payment."
+msgstr "يلزم وجود إيصال صالح قبل قبول الدفعة."
+
+#: instapay-woo.php:990
+msgid ""
+"The customer uploaded a new receipt since this page was loaded. Reload the "
+"page and review it first."
 msgstr ""
+"رفع العميل إيصالًا جديدًا بعد تحميل هذه الصفحة. أعد تحميل الصفحة وراجعه أولًا."
 
-#: instapay-woo.php:530
+#: instapay-woo.php:996
+msgid "accepted"
+msgstr "قُبلت"
+
+#: instapay-woo.php:997
+msgid "rejected"
+msgstr "رُفضت"
+
+#: instapay-woo.php:998
+msgid "cancelled"
+msgstr "ملغاة"
+
+#. translators: 1: action (accepted, rejected or cancelled), 2: manager display name
+#: instapay-woo.php:1001
 #, php-format
-msgid "Instapay payment %s by manager (%s)."
-msgstr "تم %s دفع إنستاباي بواسطة المدير (%s)."
+msgid "Instapay payment %1$s by manager (%2$s)."
+msgstr "دفعة إنستاباي %1$s بواسطة المدير (%2$s)."
 
-#: instapay-woo.php:532
+#. translators: %s: rejection reason
+#: instapay-woo.php:1004
 #, php-format
 msgid "Reason: %s"
 msgstr "السبب: %s"
 
-#: instapay-woo.php:535
+#: instapay-woo.php:1007
 msgid "Status updated via Instapay quick action."
 msgstr "تم تحديث الحالة عبر إجراء إنستاباي السريع."
 
-#: instapay-woo.php:543
+#: instapay-woo.php:1015
+msgid ""
+"The payment could not be marked as complete. Check the WooCommerce logs."
+msgstr "تعذر تحديد الدفعة كمكتملة. راجع سجلات WooCommerce."
+
+#: instapay-woo.php:1036
 msgid "Payment Receipt Rejected"
 msgstr "تم رفض إيصال الدفع"
 
-#: instapay-woo.php:547
+#. translators: %s: customer first name
+#: instapay-woo.php:1041
 #, php-format
 msgid "Hello %s,"
 msgstr "مرحبًا %s،"
 
-#: instapay-woo.php:548
+#. translators: %s: order number
+#: instapay-woo.php:1043
 #, php-format
 msgid ""
 "We reviewed your Instapay payment receipt for order #%s, but unfortunately "
@@ -183,407 +826,108 @@ msgstr ""
 "لقد راجعنا إيصال دفع إنستاباي الخاص بك للطلب #%s، ولكن للأسف كان غير صالح أو "
 "غير قابل للقراءة."
 
-#: instapay-woo.php:551
-msgid "Reason:"
-msgstr "السبب:"
-
-#: instapay-woo.php:554
+#: instapay-woo.php:1049
 msgid "Click here to upload a new receipt"
 msgstr "انقر هنا لرفع إيصال جديد"
 
-#: instapay-woo.php:558
+#: instapay-woo.php:1053
 msgid "Action Required: Payment Receipt Rejected"
 msgstr "إجراء مطلوب: تم رفض إيصال الدفع"
 
-#: instapay-woo.php:561
-msgid "Order status updated successfully."
-msgstr "تم تحديث حالة الطلب بنجاح."
+#. translators: %d: number of hours
+#: instapay-woo.php:1154
+#, php-format
+msgid "Instapay payment was not received within %d hours."
+msgstr "لم يتم استلام دفعة إنستاباي خلال %d ساعة."
 
-#: instapay-woo.php:595
+#: instapay-woo.php:1181
 msgid "Instapay Receipts Awaiting Review"
 msgstr "إيصالات إنستاباي بانتظار المراجعة"
 
-#: instapay-woo.php:612
+#: instapay-woo.php:1200
 msgid "No orders currently awaiting review."
 msgstr "لا توجد طلبات بانتظار المراجعة حاليًا."
 
-#: instapay-woo.php:636
+#. translators: %s: human-readable time, e.g. "2 hours"
+#: instapay-woo.php:1214
+#, php-format
+msgid "waiting %s"
+msgstr "بالانتظار منذ %s"
+
+#: instapay-woo.php:1223
 msgid "View All Pending"
 msgstr "عرض كل المعلقات"
 
-#: instapay-woo.php:650 includes/class-wc-gateway-instapay.php:65
-#: includes/class-wc-gateway-instapay.php:161
-#: includes/class-wc-gateway-instapay.php:200
-msgid "Instapay"
-msgstr "إنستاباي"
-
-#: instapay-woo.php:664
+#: instapay-woo.php:1259
 msgid "Receipt uploaded - Awaiting review"
 msgstr "تم رفع الإيصال - بانتظار المراجعة"
 
-#: instapay-woo.php:666
+#: instapay-woo.php:1261
 msgid "Receipt attached"
 msgstr "تم إرفاق الإيصال"
 
-#: instapay-woo.php:704
+#: instapay-woo.php:1298
 msgid "REST receipt uploads are disabled."
-msgstr ""
+msgstr "رفع الإيصالات عبر REST معطل."
 
-#: instapay-woo.php:712
+#: instapay-woo.php:1306
 msgid "Invalid order ID or key."
 msgstr "معرف أو مفتاح الطلب غير صالح."
 
-#: instapay-woo.php:738
-msgid "Instapay receipt uploaded via API. Awaiting manager approval."
-msgstr "تم رفع إيصال إنستاباي عبر API. بانتظار موافقة المدير."
-
-#: instapay-woo.php:743
+#: instapay-woo.php:1330
 msgid "Receipt uploaded successfully."
 msgstr "تم رفع الإيصال بنجاح."
 
-#: includes/class-wc-gateway-instapay.php:28
-msgid "Instapay (Egypt)"
-msgstr "إنستاباي (مصر)"
-
-#: includes/class-wc-gateway-instapay.php:29
-#, fuzzy
+#: instapay-woo.php:1343
 msgid ""
-"Accept Instapay payments and let customers securely upload a transaction "
-"receipt."
+"When you pay with Instapay, we ask you to upload a screenshot of your "
+"payment receipt and, optionally, the transaction reference. We use them only "
+"to verify your payment. The receipt may show your name, account or phone "
+"number, the amount and the date."
 msgstr ""
-"اقبل المدفوعات عبر إنستاباي. سيقوم العملاء برفع لقطة شاشة لمعاملتهم بعد "
-"الدفع."
+"عند الدفع عبر إنستاباي، نطلب منك رفع لقطة شاشة لإيصال الدفع، والرقم المرجعي "
+"للتحويل اختياريًا. نستخدمهما فقط للتحقق من دفعتك. قد يظهر في الإيصال اسمك "
+"ورقم حسابك أو هاتفك والمبلغ والتاريخ."
 
-#: includes/class-wc-gateway-instapay.php:56
-msgid "Enable/Disable"
-msgstr "تفعيل/تعطيل"
-
-#: includes/class-wc-gateway-instapay.php:58
-msgid "Enable Instapay Payment"
-msgstr "تفعيل الدفع عبر إنستاباي"
-
-#: includes/class-wc-gateway-instapay.php:62
-msgid "Title"
-msgstr "العنوان"
-
-#: includes/class-wc-gateway-instapay.php:64
-msgid "The payment method title shown at checkout."
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:69
-msgid "Description"
-msgstr "الوصف"
-
-#: includes/class-wc-gateway-instapay.php:71
-#, fuzzy
-msgid "Payment instructions shown to the customer."
-msgstr "تعليمات الدفع"
-
-#: includes/class-wc-gateway-instapay.php:72
+#: instapay-woo.php:1344
 msgid ""
-"Please transfer the total amount to our Instapay account and upload the "
-"receipt screenshot."
+"Receipts are stored privately on this website and are visible only to you "
+"and to store staff who handle orders. Receipts for cancelled, failed or "
+"refunded orders are deleted automatically after 30 days. You can ask us to "
+"export or delete your data."
 msgstr ""
-"يرجى تحويل المبلغ الإجمالي إلى حساب إنستاباي الخاص بنا ورفع لقطة شاشة "
-"للإيصال."
+"تُحفظ الإيصالات بشكل خاص على هذا الموقع، ولا يطلع عليها إلا أنت وموظفو المتجر "
+"المسؤولون عن الطلبات. تُحذف إيصالات الطلبات الملغاة أو الفاشلة أو المستردة "
+"تلقائيًا بعد 30 يومًا. يمكنك أن تطلب منا تصدير بياناتك أو حذفها."
 
-#: includes/class-wc-gateway-instapay.php:75
-msgid "Instapay Payment Address (IPA)"
-msgstr "عنوان الدفع إنستاباي (IPA)"
+#: instapay-woo.php:1361 instapay-woo.php:1392 instapay-woo.php:1407
+msgid "Instapay receipts"
+msgstr "إيصالات إنستاباي"
 
-#: includes/class-wc-gateway-instapay.php:77
-#, fuzzy
-msgid "Your Instapay address, for example username@instapay."
-msgstr "عنوان إنستاباي الخاص بك (مثال: username@instapay)."
+#: instapay-woo.php:1374
+msgid "Order number"
+msgstr "رقم الطلب"
 
-#: includes/class-wc-gateway-instapay.php:80
-msgid "Instapay Phone Number"
-msgstr "رقم هاتف إنستاباي"
+#: instapay-woo.php:1378
+msgid "Receipt on file"
+msgstr "يوجد إيصال محفوظ"
 
-#: includes/class-wc-gateway-instapay.php:82
-msgid "Your mobile number registered with Instapay."
-msgstr "رقم هاتفك المسجل في إنستاباي."
+#: instapay-woo.php:1379
+msgid "Yes"
+msgstr "نعم"
 
-#: includes/class-wc-gateway-instapay.php:85
-msgid "Instapay Payment URL"
-msgstr "رابط الدفع إنستاباي"
+#: instapay-woo.php:1379
+msgid "No"
+msgstr "لا"
 
-#: includes/class-wc-gateway-instapay.php:87
-#, fuzzy
-msgid "Optional payment URL shown on mobile devices."
-msgstr "رابط الدفع المباشر لإنستاباي (يظهر على الأجهزة المحمولة فقط)."
+#: instapay-woo.php:1385
+msgid "Transaction reference"
+msgstr "الرقم المرجعي للتحويل"
 
-#: includes/class-wc-gateway-instapay.php:90
-msgid "QR Code Image URL"
-msgstr "رابط صورة رمز QR"
-
-#: includes/class-wc-gateway-instapay.php:92
-#, fuzzy
-msgid "URL of your Instapay QR code image."
-msgstr ""
-"رابط صورة رمز QR الخاص بك لإنستاباي (ارفعها عبر مكتبة الوسائط والصق الرابط "
-"هنا)."
-
-#: includes/class-wc-gateway-instapay.php:95
-msgid "Rejection Emails"
-msgstr "رسائل البريد الإلكتروني للرفض"
-
-#: includes/class-wc-gateway-instapay.php:97
-#, fuzzy
-msgid "Email the customer when a receipt is rejected"
-msgstr "تمكين رسائل البريد الإلكتروني الآلية عند رفض الإيصال"
-
-#: includes/class-wc-gateway-instapay.php:101
-#, fuzzy
-msgid "Image Compression"
-msgstr "ضغط الصور التلقائي"
-
-#: includes/class-wc-gateway-instapay.php:103
-msgid "Resize uploaded receipts to a maximum of 1200 pixels"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:107
-#, fuzzy
-msgid "Automatic Cleanup"
-msgstr "تنظيف مساحة التخزين"
-
-#: includes/class-wc-gateway-instapay.php:109
-#, fuzzy
-msgid "Delete receipts for failed, cancelled, or refunded orders after 30 days"
-msgstr "حذف إيصالات الطلبات الملغاة/الفاشلة التي يزيد عمرها عن 30 يومًا تلقائيًا"
-
-#: includes/class-wc-gateway-instapay.php:113
-msgid "Audit Notes"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:115
-msgid "Record manager actions in order notes"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:119
-msgid "REST Uploads"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:121
-msgid "Enable receipt uploads through the REST API"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:122
+#: instapay-woo.php:1441
 msgid ""
-"Leave disabled unless a trusted mobile or headless client needs this "
-"endpoint."
+"Instapay receipts were kept because WooCommerce is set to keep order data on "
+"erasure requests."
 msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:138
-msgid "Awaiting Instapay payment receipt."
-msgstr "في انتظار إيصال دفع إنستاباي."
-
-#: includes/class-wc-gateway-instapay.php:162
-msgid "Payment Instructions"
-msgstr "تعليمات الدفع"
-
-#: includes/class-wc-gateway-instapay.php:167
-#, fuzzy
-msgid "Instapay QR code"
-msgstr "إنستاباي"
-
-#: includes/class-wc-gateway-instapay.php:171
-msgid "Send Payment To"
-msgstr "إرسال الدفع إلى"
-
-#: includes/class-wc-gateway-instapay.php:175
-msgid "Quick Pay via Instapay App"
-msgstr "دفع سريع عبر تطبيق إنستاباي"
-
-#: includes/class-wc-gateway-instapay.php:184
-msgid "Receipt uploaded successfully. Your payment is under review."
-msgstr "تم رفع الإيصال بنجاح. دفعتك قيد المراجعة."
-
-#: includes/class-wc-gateway-instapay.php:185
-msgid "Your Uploaded Receipt"
-msgstr "الإيصال المرفوع"
-
-#: includes/class-wc-gateway-instapay.php:186
-#: includes/class-wc-gateway-instapay.php:244
-#, fuzzy
-msgid "Receipt thumbnail"
-msgstr "تم إرفاق الإيصال"
-
-#: includes/class-wc-gateway-instapay.php:192
-#, fuzzy
-msgid ""
-"Your previous receipt was rejected. Please upload a new valid screenshot."
-msgstr "تم رفض إيصالك السابق. يرجى رفع لقطة شاشة صالحة جديدة بأمان."
-
-#: includes/class-wc-gateway-instapay.php:201
-msgid "Upload Payment Receipt"
-msgstr "رفع إيصال الدفع"
-
-#: includes/class-wc-gateway-instapay.php:202
-msgid "Please securely upload a screenshot of your successful transaction."
-msgstr "يرجى رفع لقطة شاشة لمعاملتك الناجحة بأمان."
-
-#: includes/class-wc-gateway-instapay.php:203
-msgid "Please select an image file first."
-msgstr "يرجى تحديد ملف صورة أولاً."
-
-#: includes/class-wc-gateway-instapay.php:203
-msgid "File size exceeds 5MB. Please upload a smaller image."
-msgstr "حجم الملف يتجاوز 5 ميغابايت. يرجى رفع صورة أصغر."
-
-#: includes/class-wc-gateway-instapay.php:203
-msgid "Uploading..."
-msgstr "جاري الرفع..."
-
-#: includes/class-wc-gateway-instapay.php:203
-msgid "An error occurred during upload. Please try again."
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:206
-#, fuzzy
-msgid "Click or drag an image here"
-msgstr "انقر أو اسحب الصورة هنا"
-
-#: includes/class-wc-gateway-instapay.php:207
-#, fuzzy
-msgid "Supports JPG, PNG, and WebP up to 5MB"
-msgstr "يدعم: JPG، PNG، WebP (الحد الأقصى 5 ميغابايت)"
-
-#: includes/class-wc-gateway-instapay.php:215
-msgid "Securely Upload Receipt"
-msgstr "رفع الإيصال بأمان"
-
-#: includes/class-wc-gateway-instapay.php:228
-msgid "Instapay Verification"
-msgstr "تحقق إنستاباي"
-
-#: includes/class-wc-gateway-instapay.php:234
-msgid "This order was not paid via Instapay."
-msgstr "لم يتم دفع هذا الطلب عبر إنستاباي."
-
-#: includes/class-wc-gateway-instapay.php:242
-msgid "Customer uploaded a receipt screenshot."
-msgstr "قام العميل برفع لقطة شاشة للإيصال."
-
-#: includes/class-wc-gateway-instapay.php:243
-msgid "View Receipt Screenshot"
-msgstr "عرض لقطة شاشة الإيصال"
-
-#: includes/class-wc-gateway-instapay.php:246
-msgid "Status is Payment Review. Accept or reject the receipt below."
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:249
-#, fuzzy
-msgid "No receipt has been uploaded yet."
-msgstr "لم يتم رفع أي ملف."
-
-#: includes/class-wc-gateway-instapay.php:254
-msgid "Quick Actions:"
-msgstr "إجراءات سريعة:"
-
-#: includes/class-wc-gateway-instapay.php:256
-msgid "Rejection Reason (Optional):"
-msgstr "سبب الرفض (اختياري):"
-
-#: includes/class-wc-gateway-instapay.php:257
-msgid "Enter reason for rejection..."
-msgstr "أدخل سبب الرفض..."
-
-#: includes/class-wc-gateway-instapay.php:258
-#, fuzzy
-msgid "Accept this payment and mark the order as Processing?"
-msgstr "هل أنت متأكد أنك تريد قبول هذا الدفع وتعيين الطلب كقيد التنفيذ؟"
-
-#: includes/class-wc-gateway-instapay.php:258
-msgid "Accept Payment"
-msgstr "قبول الدفع"
-
-#: includes/class-wc-gateway-instapay.php:259
-msgid "Reject this receipt and require a new upload?"
-msgstr ""
-
-#: includes/class-wc-gateway-instapay.php:259
-msgid "Reject Payment"
-msgstr "رفض الدفع"
-
-#: includes/class-wc-gateway-instapay.php:262
-#, fuzzy
-msgid "Cancel this order completely?"
-msgstr "هل أنت متأكد أنك تريد إلغاء هذا الطلب تماماً؟"
-
-#: includes/class-wc-gateway-instapay.php:262
-msgid "Cancel Order"
-msgstr "إلغاء الطلب"
-
-#: includes/class-wc-gateway-instapay.php:264
-msgid "No quick actions are available for the current order status."
-msgstr ""
-
-#~ msgid "Order not found."
-#~ msgstr "الطلب غير موجود."
-
-#~ msgid "No file uploaded or file format not supported."
-#~ msgstr "لم يتم رفع ملف أو صيغة الملف غير مدعومة."
-
-#~ msgid "Failed to save uploaded file."
-#~ msgstr "فشل في حفظ الملف المرفوع."
-
-#~ msgid "Proceed to Instapay"
-#~ msgstr "متابعة إلى إنستاباي"
-
-#~ msgid "This controls the title which the user sees during checkout."
-#~ msgstr "هذا يتحكم في العنوان الذي يراه المستخدم أثناء إتمام الطلب."
-
-#~ msgid ""
-#~ "Payment method description that the customer will see on your checkout."
-#~ msgstr "وصف طريقة الدفع الذي سيراه العميل في صفحة إتمام الطلب."
-
-#~ msgid "Upload Receipt"
-#~ msgstr "رفع الإيصال"
-
-#~ msgid ""
-#~ "Status is Payment Review. If the receipt is valid, change order status to "
-#~ "Processing."
-#~ msgstr ""
-#~ "الحالة هي مراجعة الدفع. إذا كان الإيصال صالحاً، قم بتغيير حالة الطلب إلى "
-#~ "قيد التنفيذ."
-
-#~ msgid ""
-#~ "No receipt uploaded yet. The customer needs to upload their screenshot."
-#~ msgstr "لم يتم رفع إيصال بعد. يحتاج العميل إلى رفع لقطة الشاشة الخاصة به."
-
-#~ msgid ""
-#~ "Are you sure you want to REJECT this payment and mark the order as "
-#~ "Pending Payment?"
-#~ msgstr "هل أنت متأكد أنك تريد رفض هذا الدفع وتعيين الطلب كبانتظار الدفع؟"
-
-#~ msgid "Invalid request."
-#~ msgstr "طلب غير صالح."
-
-#~ msgid "Order updated to Processing."
-#~ msgstr "تم تحديث الطلب إلى قيد التنفيذ."
-
-#~ msgid "Payment rejected. Order is now Pending Payment for re-upload."
-#~ msgstr "تم رفض الدفع. الطلب الآن بانتظار الدفع لإعادة الرفع."
-
-#~ msgid "Order cancelled."
-#~ msgstr "تم إلغاء الطلب."
-
-#~ msgid "Invalid action."
-#~ msgstr "إجراء غير صالح."
-
-#~ msgid "Add detailed notes to the order when admins accept/reject payments"
-#~ msgstr "إضافة ملاحظات مفصلة للطلب عند قبول/رفض المدفوعات من قبل المشرفين"
-
-#~ msgid ""
-#~ "Are you sure you want to REJECT this payment and require the customer to "
-#~ "pay/upload again?"
-#~ msgstr ""
-#~ "هل أنت متأكد أنك تريد رفض هذه الدفعة ومطالبة العميل بالدفع/الرفع مرة أخرى؟"
-
-#~ msgid "Audit Logging"
-#~ msgstr "سجلات التدقيق"
-
-#~ msgid "Automatically compress and resize uploaded receipts"
-#~ msgstr "ضغط وتغيير حجم الإيصالات المرفوعة تلقائيًا"
+"تم الاحتفاظ بإيصالات إنستاباي لأن WooCommerce مضبوط على الاحتفاظ ببيانات "
+"الطلبات عند طلبات الحذف."

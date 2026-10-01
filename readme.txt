@@ -3,15 +3,15 @@ Contributors: mariomsamy
 Donate link: https://recipe.codes/
 Tags: woocommerce, instapay, payment gateway, egypt, payment
 Requires at least: 6.3
-Tested up to: 7.0
+Tested up to: 7.1
 WC requires at least: 8.5
-WC tested up to: 10.7
+WC tested up to: 11.1
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A professional, enterprise-grade Instapay payment gateway plugin for WooCommerce.
+Manual Instapay payments for WooCommerce: customers upload a receipt, managers approve it.
 
 == Description ==
 
@@ -26,13 +26,18 @@ Security hardening in version 1.2.0 was contributed by Abdelrahman Elawadi (GitH
 * **Direct Instapay Deep Linking:** Seamless mobile experience allowing users to tap and pay directly through the Instapay app.
 * **Drag-and-Drop Receipt Upload:** Modern, beautiful, and secure image uploader for users to attach their payment proofs after placing an order.
 * **Smart Currency Restriction:** The gateway automatically hides itself for non-EGP currencies to prevent invalid transactions.
-* **Auto Image Compression:** Receipt images are automatically compressed, resized, and converted to modern formats (saving bandwidth and disk space).
+* **Block and Classic Checkout:** Works with the WooCommerce block checkout and the classic shortcode checkout.
+* **Guided Payment Page:** Step-by-step instructions, one-tap copy for the amount, Instapay address and phone, image preview and upload progress, in Arabic and English.
+* **Image Compression:** Receipts are optionally resized to 1200 pixels and re-encoded to remove camera metadata such as GPS location.
+* **Reused Receipt Warnings:** Managers are warned when the same receipt image or transaction reference appears on more than one order.
 * **"Quick Action" Approval:** Approve, Reject, or Cancel pending payments instantly using AJAX buttons inside the order meta box.
 * **Custom Rejection Reasons:** Enter specific rejection reasons that are immediately injected into the rejection email sent to the customer.
 * **Thickbox Lightbox Previews:** View receipt screenshots securely via a built-in Thickbox pop-up.
 * **Dashboard Widget:** A beautiful WordPress Dashboard widget to immediately surface orders requiring Instapay receipt approval.
 * **Secure File Storage:** Receipts are stored in a dedicated protected folder.
-* **Automatic Storage Cleanup (Cron):** A scheduled daily background task automatically deletes rejected/cancelled receipt images older than 30 days.
+* **Automatic Storage Cleanup (Cron):** A daily task deletes receipts on cancelled, failed and refunded orders after 30 days, with an optional retention period for paid orders.
+* **Automatic Expiry:** Unpaid orders are cancelled and their stock released after a configurable number of hours (48 by default).
+* **Updates from GitHub:** New releases appear on the WordPress Updates screen and are verified against their published SHA-256 checksum.
 
 == Installation ==
 
@@ -47,10 +52,13 @@ Security hardening in version 1.2.0 was contributed by Abdelrahman Elawadi (GitH
 No, the plugin intelligently hides itself if the customer's cart is not in Egyptian Pounds (EGP).
 
 = How are receipt images secured? =
-Images are stored in a custom `instapay_receipts` folder within the uploads directory, protected by strict `.htaccess` rules to prevent direct URL access.
+Images are stored in an `instapay_receipts` folder inside the uploads directory with randomized file names, and are only served through a protected viewer that checks the order key or account. The folder includes Apache and IIS deny rules; on Nginx, add a rule that denies direct access to `/wp-content/uploads/instapay_receipts/`.
 
 = What happens to old receipt images? =
-The plugin runs a daily background task (cron) that automatically deletes any rejected or cancelled receipt images that are older than 30 days to save server disk space.
+A daily task deletes receipts on cancelled, failed and refunded orders after 30 days. Receipts on paid orders are kept unless you set a retention period. Deleting the plugin from the Plugins screen removes all receipts and plugin data.
+
+= How do updates work? =
+The plugin checks the GitHub releases of mariomsamy/instapay-woo at most twice a day and offers new versions on the normal Updates screen. Only releases that publish the package ZIP together with its `.sha256` checksum are offered, and the download is verified against it before it is installed.
 
 == Screenshots ==
 
@@ -61,6 +69,24 @@ The plugin runs a daily background task (cron) that automatically deletes any re
 5. Audit Order Notes.
 
 == Changelog ==
+
+= 1.3.0 =
+* Fix: Receipt uploads crashed with a critical error on every site (infinite recursion in the upload directory filter).
+* Fix: The gateway now appears in the WooCommerce block checkout (the default since WooCommerce 8.3).
+* Fix: Uploads failed on Windows/IIS servers because the temporary file path was unslashed.
+* Fix: Drag and drop now places the dropped image into the upload field.
+* Change: New orders wait in On hold instead of Pending, so WooCommerce no longer cancels them after the hold-stock time, the customer receives the order email with Instapay instructions and an upload link, and the store receives the New order email.
+* Change: Rejected receipts return the order to On hold, and the rejection reason is shown to the customer.
+* Change: Accepting a payment uses WooCommerce payment completion: the paid date and transaction reference are recorded and the customer receives the order confirmation email.
+* New: Optional transaction reference field, plus warnings when a receipt image or reference is reused on another order.
+* New: Unpaid orders are cancelled after a configurable number of hours (default 48; 0 disables).
+* New: Updates from GitHub releases with SHA-256 verification, and a release workflow that builds the package and checksum.
+* New: Privacy policy text, personal data exporter and eraser, retention setting for paid receipts, and full data removal on uninstall.
+* Security: Accept, reject, cancel and upload share an atomic per-order lock and re-check the order inside it, so double clicks, two managers or an upload during cancellation cannot apply twice or revive a cancelled order.
+* Security: Accepting requires the receipt the manager was shown; a receipt replaced in the meantime must be reviewed first.
+* Security: Upload rate limit per order, rejection of oversized image dimensions before decoding, guaranteed metadata stripping, and the review email no longer attaches the receipt unless enabled.
+* Performance: Cleanup only loads Instapay orders that still have a receipt, in batches, and removes orphaned files.
+* UI/UX: Redesigned customer payment panel with progress steps, copy buttons, image preview, upload progress and clear states; redesigned admin review box with the amount to check, upload age and a safer reject flow; RTL-ready styles; complete Arabic translation.
 
 = 1.2.0 =
 * Documentation: Condensed and reorganized the GitHub README for faster scanning and reduced duplication.

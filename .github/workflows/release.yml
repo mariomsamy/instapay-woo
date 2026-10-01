@@ -1,0 +1,45 @@
+# Builds the plugin ZIP and its SHA-256 checksum when a GitHub release is published.
+# Sites running the plugin find the new release through the built-in GitHub updater
+# and verify the download against the checksum before installing it.
+name: Release package
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Check the tag matches the plugin version
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          HEADER=$(grep -m1 -E '^\s*\*\s*Version:' instapay-woo.php | awk '{print $NF}')
+          CONSTANT=$(grep -m1 "INSTAPAY_WOO_VERSION'," instapay-woo.php | grep -oE "[0-9]+\.[0-9]+(\.[0-9]+)?")
+          STABLE=$(grep -m1 '^Stable tag:' readme.txt | awk '{print $NF}')
+          echo "tag=$TAG header=$HEADER constant=$CONSTANT stable=$STABLE"
+          [ "$TAG" = "$HEADER" ] && [ "$TAG" = "$CONSTANT" ] && [ "$TAG" = "$STABLE" ]
+
+      - name: Lint PHP
+        run: find . -name '*.php' -not -path './.git/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Build ZIP and checksum
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          NAME="instapay-gateway-for-egypt-${VERSION}.zip"
+          mkdir -p build/instapay-gateway-for-egypt
+          rsync -a --exclude-from=.distignore --exclude=build ./ build/instapay-gateway-for-egypt/
+          (cd build && zip -qr "../${NAME}" instapay-gateway-for-egypt)
+          sha256sum "${NAME}" > "${NAME}.sha256"
+          cat "${NAME}.sha256"
+          echo "NAME=${NAME}" >> "$GITHUB_ENV"
+
+      - name: Attach to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${GITHUB_REF_NAME}" "${NAME}" "${NAME}.sha256" --clobber
